@@ -1,3 +1,23 @@
 @media (min-width: 1024px) {
-    
+    .btn {
+        &-white {
+            color: var(--white);
+            background: var(--purple);
+            transition: var(--transition);
+        }
+
+        &-coral {
+            color: var(--white);
+            background: var(--purple);
+            transition: var(--transition);
+        }
+    }
+
+    .header {
+        .menu {
+            &>.menu-item {
+                
+            }
+        }
+    }
 }
