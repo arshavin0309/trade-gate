@@ -16,7 +16,22 @@
     .header {
         .menu {
             &>.menu-item {
-                
+                &:hover {
+                    .sub-menu {
+                        transition: var(--transition);
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .sub-menu {
+                a {
+                    &:hover {
+                        transition: var(--transition);
+                        color: var(--purple);
+                    }
+                }
             }
         }
     }

@@ -167,6 +167,9 @@ h3 {
         }
 
         .sub-menu {
+            visibility: hidden;
+            opacity: 0;
+
             z-index: 10;
             position: absolute;
             left: 50%;
@@ -201,6 +204,26 @@ h3 {
 
     &__burger {
         display: none;
+    }
+}
+
+section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+    &:first-child {
+        margin-top: 10px;
+        margin-bottom: 120px;
+
+        .box {
+            height: 680px;
+            border-radius: 50px;
+            background: image-set(
+                url(../images/first-section.avif),
+                url(../images/first-section.webp),
+                url(../images/first-section.png)
+            ) center / 100% 100% no-repeat;
+        }
     }
 }
 
