@@ -39,10 +39,10 @@
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1280px;
     margin: auto;
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 h1 {
@@ -51,6 +51,8 @@ h1 {
     font-weight: 600;
     line-height: 117%;
     text-align: center;
+    color: var(--white);
+    margin: 0;
 }
 
 h2 {
@@ -58,12 +60,14 @@ h2 {
     font-weight: 600;
     line-height: 120%;
     text-align: center;
+    margin: 0;
 }
 
 h3 {
     font-size: 24px;
     font-weight: 600;
     line-height: 130%;
+    margin: 0;
 }
 
 .textm {
@@ -97,6 +101,7 @@ h3 {
         text-align: center;
         border: none;
         cursor: pointer;
+        text-decoration: none;
     }
 
     &-coral {
@@ -111,6 +116,7 @@ h3 {
         text-align: center;
         border: none;
         cursor: pointer;
+        text-decoration: none;
     }
 }
 
@@ -216,13 +222,76 @@ section {
         margin-bottom: 120px;
 
         .box {
-            height: 680px;
+            min-height: 570px;
+            padding: 170px 180px 30px;
             border-radius: 50px;
-            background: image-set(
-                url(../images/first-section.avif),
-                url(../images/first-section.webp),
-                url(../images/first-section.png)
-            ) center / 100% 100% no-repeat;
+            background: image-set(url(../images/first-section.avif),
+                    url(../images/first-section.webp),
+                    url(../images/first-section.png)) center / 100% 100% no-repeat;
+        }
+
+        .btn-white {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 35px;
+        }
+
+        p {
+            max-width: 705px;
+            margin: auto;
+            margin-top: 15px;
+            color: var(--white);
+            text-align: center;
+        }
+    }
+}
+
+.crumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    a,
+    div {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    &>* {
+        &:not(:last-child) {
+            display: flex;
+            align-items: center;
+
+            &::after {
+                content: '/';
+                display: block;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.index-hero {
+    div.box {
+        padding: 170px 80px 30px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+
+        img {
+            width: 60px;
+            height: 60px;
         }
     }
 }
