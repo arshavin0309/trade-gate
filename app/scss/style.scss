@@ -299,11 +299,9 @@ section {
 .footer {
     padding-top: 120px;
     padding-bottom: 70px;
-    background: image-set(
-        url(../images/footer-bg.avif),
-        url(../images/footer-bg.webp),
-        url(../images/footer-bg.png)
-    ) center / 100% 100% no-repeat;
+    background: image-set(url(../images/footer-bg.avif),
+            url(../images/footer-bg.webp),
+            url(../images/footer-bg.png)) center / 100% 100% no-repeat;
 
     &__logo {
         margin: auto;
@@ -357,6 +355,53 @@ section {
 
     .copyright {
         margin-top: 20px;
+    }
+}
+
+.banner {
+    position: relative;
+    margin-bottom: 0;
+    background: image-set(url(../images/banner-bg.avif),
+            url(../images/banner-bg.webp),
+            url(../images/banner-bg.png)) center / 100% 100% no-repeat;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 340px;
+        height: 100%;
+        background: url(../images/banner-left.svg) left center / contain no-repeat;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 390px;
+        height: 100%;
+        background: url(../images/banner-right.svg) right center / contain no-repeat;
+    }
+
+    .container {
+        padding-top: 105px;
+        padding-bottom: 105px;
+    }
+
+    h2 {
+        max-width: 1205px;
+        margin: auto;
+        color: var(--white);
+        text-align: center;
+    }
+
+    .btn-white {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 35px;
     }
 }
 
