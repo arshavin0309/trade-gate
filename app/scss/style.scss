@@ -742,6 +742,39 @@ section {
         width: 100%;
         margin-top: 15px;
     }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 40px 1fr 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__price {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__condition {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .green {
+        color: #009E3F;
+    }
+
+    .red {
+        color: #E82127;
+    }
 }
 
 @import '../scss/hovers';
