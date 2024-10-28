@@ -23,3 +23,26 @@ if (document.location.pathname === '/why.html') { document.title = 'Почему
 if (document.location.pathname === '/documents.html') { document.title = 'Документы' };
 if (document.location.pathname === '/about.html') { document.title = 'О Patronus Investments' };
 if (document.location.pathname === '/contacts.html') { document.title = 'Контакты' };
+
+let goTopBtn = document.querySelector('.upButton');
+
+window.addEventListener('scroll', trackScroll);
+goTopBtn.addEventListener('click', backToTop);
+
+function trackScroll() {
+    let scrolled = window.pageYOffset;
+
+    if (scrolled > 100) {
+        goTopBtn.classList.add('show');
+    };
+    if (scrolled < 100) {
+        goTopBtn.classList.remove('show');
+    };
+};
+
+function backToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
