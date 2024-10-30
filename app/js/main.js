@@ -48,7 +48,6 @@ function backToTop() {
 };
 
 let swiper1 = new Swiper(".swiper1", {
-    loop: true,
     slidesPerView: 3,
     spaceBetween: 20,
 
@@ -60,5 +59,19 @@ let swiper1 = new Swiper(".swiper1", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+});
+
+let swiper = new Swiper(".swiper2", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+
+let swiper4 = new Swiper(".swiper3", {
+    spaceBetween: 10,
+    thumbs: {
+        swiper: swiper,
     },
 });

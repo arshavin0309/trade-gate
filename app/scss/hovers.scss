@@ -127,10 +127,6 @@
 
             &:hover {
                 filter: brightness(0) saturate(100%) invert(80%) sepia(53%) saturate(2290%) hue-rotate(306deg) brightness(91%) contrast(92%);
-
-                &::after {
-                    filter: none;
-                }
             }
         }
     }
