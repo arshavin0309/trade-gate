@@ -62,7 +62,7 @@ let swiper1 = new Swiper(".swiper1", {
     },
 });
 
-let swiper = new Swiper(".swiper2", {
+let swiper2 = new Swiper(".swiper2", {
     spaceBetween: 10,
     slidesPerView: 5,
     freeMode: true,
@@ -72,6 +72,20 @@ let swiper = new Swiper(".swiper2", {
 let swiper4 = new Swiper(".swiper3", {
     spaceBetween: 10,
     thumbs: {
-        swiper: swiper,
+        swiper: swiper2,
+    },
+});
+
+let swiper5 = new Swiper(".swiper5", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+
+let swiper6 = new Swiper(".swiper6", {
+    spaceBetween: 10,
+    thumbs: {
+        swiper: swiper5,
     },
 });

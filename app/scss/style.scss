@@ -997,10 +997,12 @@ section {
         }
     }
 
-    &__table {
+    &__box {
         border: 1px solid var(--coral);
         border-radius: 8px;
+    }
 
+    &__table {
         table {
             position: relative;
             width: 100%;
@@ -1025,6 +1027,7 @@ section {
                 &:first-child {
                     height: 60px;
                     border-bottom: 6px solid var(--white);
+                    border-radius: 8px 8px 0 0;
                 }
 
                 &:not(:first-child) {
@@ -1044,6 +1047,11 @@ section {
 
                 &:first-child {
                     text-align: left;
+                    border-radius: 8px 0 0 0;
+                }
+
+                &:last-child {
+                    border-radius: 0 8px 0 0;
                 }
             }
 
