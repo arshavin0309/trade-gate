@@ -923,6 +923,10 @@ section {
         font-size: 14px;
         font-weight: 500;
     }
+
+    .swiper-scrollbar {
+        position: initial;
+    }
 }
 
 @import '../scss/hovers';

@@ -20,7 +20,19 @@
     .header {
         .menu {
             &>.menu-item {
+                &>a {
+                    &::after {
+                        transition: var(--transition);
+                    }
+                }
+
                 &:hover {
+                    &>a {
+                        &::after {
+                            rotate: (180deg);
+                        }
+                    }
+
                     .sub-menu {
                         transform: translateX(-50%);
                         visibility: visible;
@@ -36,7 +48,7 @@
                     transition: var(--transition);
 
                     &:hover {
-                        color: var(--purple);
+                        color: var(--coral);
                     }
                 }
             }
@@ -88,7 +100,7 @@
                     transition: var(--transition);
 
                     &:hover {
-                        color: var(--purple);
+                        color: var(--coral);
                     }
                 }
             }
@@ -101,7 +113,23 @@
                 transition: var(--transition);
 
                 &:hover {
-                    color: var(--purple);
+                    color: var(--coral);
+                }
+            }
+        }
+    }
+
+    .swiper1 {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            transition: var(--transition);
+
+            &:hover {
+                filter: brightness(0) saturate(100%) invert(80%) sepia(53%) saturate(2290%) hue-rotate(306deg) brightness(91%) contrast(92%);
+
+                &::after {
+                    filter: none;
                 }
             }
         }
