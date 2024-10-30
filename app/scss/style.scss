@@ -824,6 +824,107 @@ section {
     }
 }
 
+.index-reviews {
+    h2 {
+        margin-bottom: 15px;
+
+        &+p {
+            max-width: 695px;
+            margin: auto;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-between;
+        height: auto;
+        padding: 30px 25px;
+        background: var(--coral);
+        border-radius: 10px;
+        color: var(--white);
+    }
+
+    &__box {
+        display: grid;
+        gap: 15px;
+    }
+
+    &__stars {
+        width: 136px;
+        height: 32px;
+        background: image-set(url(../images/stars.avif),
+                url(../images/stars.webp),
+                url(../images/stars.png)) center / contain no-repeat;
+    }
+
+    &__author {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 30px 1fr;
+        align-items: center;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+}
+
+.swiper1 {
+    .swiper-pagination {
+        position: initial;
+        margin-top: 25px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: initial;
+        width: 24px;
+        height: 24px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev {
+        position: relative;
+        background: url(../images/prev.svg) center / contain no-repeat;
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 100px;
+            height: 1px;
+            background: var(--black);
+            top: 11px;
+            left: 100%;
+        }
+    }
+
+    .swiper-button-next {
+        background: url(../images/next.svg) center / contain no-repeat;
+    }
+
+    .swiper-pagination-fraction {
+        color: var(--black);
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
 @import '../scss/hovers';
 @import '../scss/1800';
 @import '../scss/1400';

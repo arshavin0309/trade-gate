@@ -46,3 +46,19 @@ function backToTop() {
         behavior: "smooth"
     });
 };
+
+let swiper1 = new Swiper(".swiper1", {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

@@ -33,8 +33,9 @@
                 transition: var(--transition);
 
                 a {
+                    transition: var(--transition);
+
                     &:hover {
-                        transition: var(--transition);
                         color: var(--purple);
                     }
                 }
@@ -67,6 +68,40 @@
                     position: initial;
                     opacity: 1;
                     font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .menu {
+            &>.menu-item {
+                &>a {
+                    cursor: initial;
+                }
+            }
+
+            .sub-menu {
+                transition: var(--transition);
+
+                a {
+                    transition: var(--transition);
+
+                    &:hover {
+                        color: var(--purple);
+                    }
+                }
+            }
+        }
+    }
+
+    .index-analitycs {
+        &__box {
+            a {
+                transition: var(--transition);
+
+                &:hover {
+                    color: var(--purple);
                 }
             }
         }
