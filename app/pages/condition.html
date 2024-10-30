@@ -15,32 +15,44 @@
         </div>
     </section>
 
-    
 
-    <section class="start-instruments">
+
+    <section class="condition-instruments">
         <div class="container">
 
             <div class="swiper swiper5">
                 <div class="swiper-wrapper">
-                    <button class="swiper-slide">Состояние рынка</button>
-                    <button class="swiper-slide">Котировки Online</button>
-                    <button class="swiper-slide">Графики Online</button>
+                    <button class="swiper-slide condition-instruments__btn">Состояние рынка</button>
+                    <button class="swiper-slide condition-instruments__btn">Котировки Online</button>
+                    <button class="swiper-slide condition-instruments__btn">Графики Online</button>
                 </div>
             </div>
 
-            <div class="start-instruments__box">
+            <div class="condition-instruments__box">
                 <div class="swiper swiper6">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide start-instruments__item">
+                        <div class="swiper-slide condition-instruments__item">
                             <p class="textm">Следите за ценами и динамикой финансовых инструментов в режиме реального времени по разным периодам</p>
+
+                            <div class="widget-box">
+                                <script src="https://api.marketcheese.com/widgets/markets/widget.js" data-config='{"language":"ru","orientation":"auto","defaultPeriod":"week","adaptive":true,"devSource":"WDT","groups":[{"name":"Форекс","symbols":"42,48,57,68,87"},{"name":"Товарные фьючерсы","symbols":"127,129,187,188"},{"name":"Акции США","symbols":"11,27,30,35,196"}],"height":390}'></script>
+                            </div>
                         </div>
 
-                        <div class="swiper-slide start-instruments__item">
+                        <div class="swiper-slide condition-instruments__item">
                             <p class="textm">Котировки финансовых рынков с дополнительной информацией и графиками</p>
+
+                            <div class="widget-box">
+                                <script src="https://api.marketcheese.com/widgets/quotes/widget.js" data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":true,"devSource":"WDT","groups":[{"name":"Форекс","symbols":"42,48,57,68,87"},{"name":"Товарные фьючерсы","symbols":"127,129,187,188"},{"name":"Акции США","symbols":"11,27,30,35,196"}],"height":700}'></script>
+                            </div>
                         </div>
 
-                        <div class="swiper-slide start-instruments__item">
+                        <div class="swiper-slide condition-instruments__item">
                             <p class="textm">Используйте главный инструмент трейдеров — технический анализ на графике финансового инструмента</p>
+
+                            <div class="widget-box">
+                                <script src="https://api.marketcheese.com/widgets/chart/widget.js" data-config='{"size":{"height":390},"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"ru","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"EURUSD","devSource":"WDT"}'></script>
+                            </div>
                         </div>
                     </div>
                 </div>

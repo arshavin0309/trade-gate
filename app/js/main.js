@@ -77,7 +77,7 @@ let swiper4 = new Swiper(".swiper3", {
 });
 
 let swiper5 = new Swiper(".swiper5", {
-    spaceBetween: 10,
+    spaceBetween: 20,
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
