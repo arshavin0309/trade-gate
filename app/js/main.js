@@ -89,3 +89,23 @@ let swiper6 = new Swiper(".swiper6", {
         swiper: swiper5,
     },
 });
+
+let swiper7 = new Swiper(".swiper7", {
+    spaceBetween: 20,
+    slidesPerView: 4,
+});
+
+let swiper8 = new Swiper(".swiper8", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
