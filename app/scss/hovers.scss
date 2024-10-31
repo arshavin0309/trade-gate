@@ -70,6 +70,21 @@
         }
     }
 
+    .platform-advantages {
+        .btn-white {
+            &:hover {
+                width: calc(100% - 12px);
+                background: var(--white);
+
+                div {
+                    position: initial;
+                    opacity: 1;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
     .terms-advantages {
         .btn-white {
             &:hover {
