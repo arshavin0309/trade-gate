@@ -124,16 +124,3 @@ $(document).ready(function () {
         return false;
     });
 });
-
-let aside = document.querySelector('.aside');
-window.addEventListener('scroll', fixedAside);
-
-function fixedAside() {
-    let scrolled = window.pageYOffset;
-
-    if (scrolled > 550 && scrolled < 2900) {
-        aside.classList.add('fixed');
-    } else {
-        aside.classList.remove('fixed');
-    }
-};
