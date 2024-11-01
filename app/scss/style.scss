@@ -1825,6 +1825,97 @@ section {
     }
 }
 
+.review-hero {
+    h2 {
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    p {
+        text-align: left !important;
+        color: var(--black) !important;
+        margin-left: 0 !important;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+
+    ul {
+        margin-bottom: 25px;
+        list-style: none;
+
+        li {
+            display: grid;
+            grid-template-columns: 10px 1fr;
+            gap: 10px;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 10px;
+                background: var(--purple);
+                transform: translateY(7px);
+            }
+        }
+    }
+}
+
+.review-important {
+    display: grid;
+    gap: 40px;
+    align-items: center;
+    grid-template-columns: 370px 290px;
+
+    h2 {
+        margin-bottom: 15px;
+    }
+}
+
+.faq-accordion {
+    li {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+
+        &::before {
+            display: none;
+        }
+
+        &.active {
+            h3 {
+                &::after {
+                    background: url(../images/minus-white.svg) center / contain no-repeat;
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+
+    h3 {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 30px;
+        align-items: center;
+        padding: 25px;
+        background: var(--coral);
+        border-radius: 10px;
+        color: var(--white);
+
+        &::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            transition: var(--transition);
+            background: url(../images/plus-white.svg) center / contain no-repeat;
+        }
+    }
+}
+
 @import '../scss/hovers';
 @import '../scss/1800';
 @import '../scss/1400';

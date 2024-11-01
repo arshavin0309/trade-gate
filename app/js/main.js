@@ -124,3 +124,18 @@ $(document).ready(function () {
         return false;
     });
 });
+
+$(document).ready(function () {
+    $('.faq-accordion > li > .answer').hide();
+
+    $('.faq-accordion > li').click(function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active").find(".answer").slideUp();
+        } else {
+            $(".faq-accordion > li.active .answer").slideUp();
+            $(".faq-accordion > li.active").removeClass("active");
+            $(this).addClass("active").find(".answer").slideDown();
+        }
+        return false;
+    });
+});
