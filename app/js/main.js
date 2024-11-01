@@ -109,3 +109,31 @@ let swiper8 = new Swiper(".swiper8", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+$(document).ready(function () {
+    $('.strategy-accordion > li > .answer').hide();
+
+    $('.strategy-accordion > li').click(function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active").find(".answer").slideUp();
+        } else {
+            $(".strategy-accordion > li.active .answer").slideUp();
+            $(".strategy-accordion > li.active").removeClass("active");
+            $(this).addClass("active").find(".answer").slideDown();
+        }
+        return false;
+    });
+});
+
+let aside = document.querySelector('.aside');
+window.addEventListener('scroll', fixedAside);
+
+function fixedAside() {
+    let scrolled = window.pageYOffset;
+
+    if (scrolled > 550 && scrolled < 2900) {
+        aside.classList.add('fixed');
+    } else {
+        aside.classList.remove('fixed');
+    }
+};
