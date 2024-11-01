@@ -160,4 +160,38 @@
             }
         }
     }
+
+    .platform-platform {
+        .btn-coral {
+            svg {
+                path {
+                    transition: var(--transition);
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        fill: var(--white);
+                    }
+                }
+            }
+        }
+
+        .btn-white {
+            svg {
+                path {
+                    transition: var(--transition);
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        fill: var(--white);
+                    }
+                }
+            }
+        }
+    }
 }

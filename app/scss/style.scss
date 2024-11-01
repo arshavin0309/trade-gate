@@ -104,6 +104,7 @@ h3 {
         cursor: pointer;
         text-decoration: none;
         transition: var(--transition);
+        overflow: hidden;
     }
 
     &-coral {
@@ -1473,19 +1474,15 @@ section {
         }
 
         &:nth-child(1) {
-            background: image-set(
-                url(../images/platform-bg-1.avif),
-                url(../images/platform-bg-1.webp),
-                url(../images/platform-bg-1.png)
-            ) right center / 284px no-repeat;
+            background: image-set(url(../images/platform-bg-1.avif),
+                    url(../images/platform-bg-1.webp),
+                    url(../images/platform-bg-1.png)) right center / 284px no-repeat;
         }
 
         &:nth-child(2) {
-            background: image-set(
-                url(../images/platform-bg-2.avif),
-                url(../images/platform-bg-2.webp),
-                url(../images/platform-bg-2.png)
-            ) right bottom 39px / 278px no-repeat;
+            background: image-set(url(../images/platform-bg-2.avif),
+                    url(../images/platform-bg-2.webp),
+                    url(../images/platform-bg-2.png)) right bottom 39px / 278px no-repeat;
         }
 
         &.mobile {
@@ -1494,11 +1491,9 @@ section {
             grid-row: 1/3;
             border: none;
             color: var(--white);
-            background: image-set(
-                url(../images/platform-bg-3.avif),
-                url(../images/platform-bg-3.webp),
-                url(../images/platform-bg-3.png)
-            ) right top 195px / 305px 380px no-repeat;
+            background: image-set(url(../images/platform-bg-3.avif),
+                    url(../images/platform-bg-3.webp),
+                    url(../images/platform-bg-3.png)) right bottom 164px / 305px 309px no-repeat;
 
             &::before {
                 z-index: -1;
@@ -1538,6 +1533,34 @@ section {
         align-items: center;
         justify-content: center;
         gap: 10px;
+    }
+}
+
+.personal-account {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 230px;
+        gap: 20px;
+        padding: 30px 25px;
+        background: var(--coral);
+        color: var(--white);
+        border-radius: 10px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        max-width: 475px;
     }
 }
 
