@@ -1766,11 +1766,11 @@ main>section {
             grid-template-columns: 10px 1fr;
             gap: 10px;
             row-gap: 15px;
-    
+
             &:not(:last-child) {
                 margin-bottom: 25px;
             }
-    
+
             &::before {
                 content: '';
                 width: 10px;
@@ -1897,9 +1897,15 @@ main>section {
 }
 
 .faq-accordion {
+    list-style: none;
+
     li {
         grid-template-columns: 1fr;
         gap: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
 
         &::before {
             display: none;
@@ -1918,6 +1924,10 @@ main>section {
                     transform: rotate(360deg);
                 }
             }
+        }
+
+        .answer {
+            margin-top: 20px;
         }
     }
 
