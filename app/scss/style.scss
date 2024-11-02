@@ -2016,6 +2016,7 @@ main>section {
         display: flex;
         gap: 10px;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__tag {
@@ -2072,6 +2073,7 @@ main>section {
         display: flex;
         gap: 10px;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__tag {
@@ -2157,6 +2159,99 @@ main>section {
     &__link {
         margin-top: 50px;
         margin-bottom: 0;
+
+        a {
+            color: var(--black);
+            transition: var(--transition);
+            text-decoration: none;
+        }
+    }
+}
+
+.other {
+    position: relative;
+
+    h2 {
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    &::after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -120px;
+        width: 100%;
+        height: 585px;
+        background: -webkit-image-set(url(../images/index-analitycs-bg.avif), url(../images/index-analitycs-bg.webp), url(../images/index-analitycs-bg.png)) center / 100% 100% no-repeat;
+        background: image-set(url(../images/index-analitycs-bg.avif), url(../images/index-analitycs-bg.webp), url(../images/index-analitycs-bg.png)) center / 100% 100% no-repeat;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__item {
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid var(--coral);
+        background: var(--white);
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 25px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    &__link {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+
+        margin-bottom: 10px;
+        color: var(--black);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    &__date {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    &__tags {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    &__tag {
+        margin-top: 25px;
+        padding: 6px 10px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        color: var(--black);
+        background: var(--coral-light);
+        border-radius: 30px;
+    }
+}
+
+.single-with-aside {
+    &::after {
+        display: none;
     }
 }
 

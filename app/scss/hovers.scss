@@ -203,6 +203,24 @@
         }
     }
 
+    .other {
+        &__link {
+            &:hover {
+                color: var(--coral);
+            }
+        }
+    }
+
+    .single {
+        &__link {
+            a {
+                &:hover {
+                    color: var(--coral);
+                }
+            }
+        }
+    }
+
     .forecasts-box {
         &__link {
             &:hover {
