@@ -56,7 +56,8 @@ h1 {
     margin: 0;
 }
 
-h2 {
+h2,
+.h2 {
     font-size: 40px;
     font-weight: 600;
     line-height: 120%;
@@ -1965,6 +1966,197 @@ main>section {
             transition: var(--transition);
             background: url(../images/plus-white.svg) center / contain no-repeat;
         }
+    }
+}
+
+.news-box {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        gap: 20px;
+    }
+
+    &__item {
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid var(--coral);
+
+        img {
+            margin-bottom: 25px;
+            border-radius: 8px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+
+    &__link {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        color: var(--black);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    &__date {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    &__tags {
+        margin-top: 25px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__tag {
+        padding: 6px 10px;
+        border-radius: 30px;
+        background: var(--coral-light);
+    }
+}
+
+.forecasts-box {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        gap: 20px;
+    }
+
+    &__item {
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid var(--coral);
+
+        img {
+            margin-bottom: 25px;
+            border-radius: 8px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+
+    &__link {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        color: var(--black);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    &__date {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    &__tags {
+        margin-top: 25px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__tag {
+        padding: 6px 10px;
+        border-radius: 30px;
+        background: var(--coral-light);
+    }
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50px;
+    list-style: none;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        background: var(--white);
+        border: 1px solid var(--coral);
+        color: var(--black);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+
+        &.active {
+            color: var(--white);
+            background: var(--coral);
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: inherit;
+            height: inherit;
+            text-decoration: none;
+            color: var(--black);
+            transition: var(--transition);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+}
+
+.single {
+    &__tags {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    &__tag {
+        padding: 6px 10px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        border-radius: 30px;
+        color: var(--black);
+        background: var(--coral-light);
+    }
+
+    &__image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        margin-top: 50px;
+        margin-bottom: 0;
     }
 }
 

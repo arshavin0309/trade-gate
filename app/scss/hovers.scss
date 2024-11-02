@@ -194,4 +194,28 @@
             }
         }
     }
+
+    .news-box {
+        &__link {
+            &:hover {
+                color: var(--coral);
+            }
+        }
+    }
+
+    .forecasts-box {
+        &__link {
+            &:hover {
+                color: var(--coral);
+            }
+        }
+    }
+
+    .pagination {
+        a {
+            &:hover {
+                color: var(--coral);
+            }
+        }
+    }
 }
