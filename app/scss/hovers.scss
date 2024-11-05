@@ -70,6 +70,25 @@
         }
     }
 
+    .documents {
+        &__item {
+            position: relative;
+        }
+
+        .btn-white {
+            &:hover {
+                width: calc(100% - 12px);
+                background: var(--white);
+
+                div {
+                    position: initial;
+                    opacity: 1;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
     .start-instruments {
         &__table {
             table {
@@ -97,7 +116,9 @@
                     }
                 }
             }
-        };
+        }
+
+        ;
     }
 
     .calendar-find {
@@ -353,6 +374,39 @@
         a {
             &:hover {
                 color: var(--coral);
+            }
+        }
+    }
+
+    .contacts {
+        &__tel {
+            &:hover {
+                color: var(--purple);
+            }
+        }
+
+        &__email {
+            &:hover {
+                color: var(--purple);
+            }
+        }
+    }
+
+    form {
+        label[for="checkbox"] {
+            a {
+                &:hover {
+                    color: var(--coral);
+                }
+            }
+        }
+
+        input {
+            &[type="submit"] {
+                &:hover {
+                    background: var(--purple);
+                    color: var(--white);
+                }
             }
         }
     }
