@@ -523,6 +523,7 @@ main>section {
         position: relative;
         height: 250px;
         border-radius: 10px;
+        background: var(--white);
 
         &:nth-child(1) {
             max-width: 320px;
@@ -697,6 +698,7 @@ main>section {
             }
 
             &::after {
+                z-index: 1;
                 position: absolute;
                 content: '';
                 left: 60px;
@@ -717,6 +719,7 @@ main>section {
             }
 
             &::after {
+                z-index: 1;
                 position: absolute;
                 content: '';
                 left: 60px;
@@ -1076,13 +1079,11 @@ main>section {
         }
     }
 
-    &__box {
-        border: 1px solid var(--coral);
-        border-radius: 8px;
-        overflow: hidden;
-    }
-
     &__table {
+        border: 1px solid var(--coral);
+        border-radius: 10px;
+        overflow: hidden;
+
         table {
             position: relative;
             width: 100%;
@@ -1397,6 +1398,7 @@ main>section {
         width: 50px;
         height: 50px;
         margin-left: auto;
+        border: 1px solid var(--coral);
 
         &::after {
             display: block;
@@ -2861,6 +2863,7 @@ main>section {
         padding: 30px 25px;
         border-radius: 10px;
         overflow: hidden;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2509803922);
     }
 
     &__map {
