@@ -70,6 +70,81 @@
         }
     }
 
+    .start-instruments {
+        &__table {
+            table {
+                tr {
+                    &:hover {
+                        background: #ECC3EC;
+                    }
+                }
+            }
+        }
+
+        &__buy {
+            &:hover {
+                background: #70B857;
+            }
+        }
+
+        &__more {
+            &:hover {
+                color: var(--coral);
+
+                svg {
+                    path {
+                        fill: var(--coral);
+                    }
+                }
+            }
+        };
+    }
+
+    .calendar-find {
+        .btn-white {
+            &:hover {
+                width: calc(100% - 12px);
+                background: var(--white);
+
+                div {
+                    position: initial;
+                    opacity: 1;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .currencies-list {
+        .btn-white {
+            &:hover {
+                width: calc(100% - 12px);
+                background: var(--white);
+
+                div {
+                    position: initial;
+                    opacity: 1;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .stocks-list {
+        .btn-white {
+            &:hover {
+                width: calc(100% - 12px);
+                background: var(--white);
+
+                div {
+                    position: initial;
+                    opacity: 1;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
     .platform-advantages {
         .btn-white {
             &:hover {
