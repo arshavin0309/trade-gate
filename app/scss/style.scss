@@ -2413,7 +2413,7 @@ main>section {
 
     &__item {
         position: relative;
-        min-height: 230px;
+        min-height: 265px;
         padding: 30px 15px;
         border-radius: 10px;
         border: 1px solid var(--coral);
@@ -2424,6 +2424,64 @@ main>section {
         background: var(--coral) image-set(url(../images/indexes-list.avif),
                 url(../images/indexes-list.webp),
                 url(../images/indexes-list.png)) center bottom 30px / 100% no-repeat;
+    }
+
+    .btn-white {
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+        left: 6px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        border: 1px solid var(--coral);
+
+        div {
+            position: absolute;
+            left: -500%;
+            color: var(--coral);
+            opacity: 0;
+            -webkit-transition: var(--transition);
+            transition: var(--transition);
+            font-size: 0;
+        }
+
+        &::after {
+            display: block;
+            width: 20px;
+            height: 20px;
+            content: "";
+            background: url(../images/arrow-1.svg) center / contain no-repeat;
+        }
+    }
+}
+
+.cryptocurrencies-list {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    &__item {
+        position: relative;
+        min-height: 265px;
+        padding: 30px 15px;
+        border-radius: 10px;
+        border: 1px solid var(--coral);
+        background: var(--white);
+    }
+
+    &__image {
+        background: var(--coral) image-set(url(../images/cryptocurrencies-image.avif),
+                url(../images/cryptocurrencies-image.webp),
+                url(../images/cryptocurrencies-image.png)) left bottom / 240px no-repeat;
     }
 
     .btn-white {
