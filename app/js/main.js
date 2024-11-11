@@ -139,3 +139,6 @@ $(document).ready(function () {
         return false;
     });
 });
+
+$('body').hide();
+$('body').fadeIn(1000);
