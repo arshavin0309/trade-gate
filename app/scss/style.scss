@@ -1158,6 +1158,20 @@ main>section {
         cursor: pointer;
     }
 
+    &__hide {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 13px;
+        background: none;
+        border: none;
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        cursor: pointer;
+    }
+
     &__buy {
         max-width: 80px;
         display: flex;

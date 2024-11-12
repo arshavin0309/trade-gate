@@ -24,7 +24,7 @@ if (document.location.pathname === '/documents.html') { document.title = 'Док
 if (document.location.pathname === '/about.html') { document.title = 'О Patronus Investments' };
 if (document.location.pathname === '/contacts.html') { document.title = 'Контакты' };
 
-window.addEventListener('scroll', trackScroll);
+$(window).on('scroll', trackScroll);
 $('.upButton').on('click', backToTop);
 
 function trackScroll() {
@@ -124,20 +124,41 @@ $(document).ready(function () {
     });
 });
 
-let tableBtn = document.querySelectorAll(".start-instruments__btn");
-let tableTable = document.querySelectorAll(".start-instruments__table");
+// табы для таблиц (начало)
+let tableBtn = $(".start-instruments__btn");
+let tableTable = $(".start-instruments__table");
+let tableShow = $(".start-instruments__show");
+let tableHide = $(".start-instruments__hide");
+let tableTr = $(".start-instruments__table tr");
 
-let tableShow = document.querySelector(".start-instruments__show");
-let tableTr = document.querySelectorAll(".start-instruments__table tr");
+tableHide.css('display', 'none')
 
 for (let i = 0; i < tableBtn.length; i++) {
-    tableBtn[i].addEventListener("click", () => {
+    tableBtn.eq(i).on("click", () => {
         for (let n = 0; n < tableBtn.length; n++) {
-            tableBtn[n].classList.remove("active");
-            tableTable[n].classList.remove("active");
+            tableBtn.eq(n).removeClass("active");
+            tableTable.eq(n).removeClass("active");
         };
 
-        tableBtn[i].classList.add("active");
-        tableTable[i].classList.add("active");
+        tableBtn.eq(i).addClass("active");
+        tableTable.eq(i).addClass("active");
+        hideTr()
     });
 };
+
+function showTr() {
+    tableTr.addClass('active')
+    tableShow.css('display', 'none')
+    tableHide.css('display', 'block')
+}
+
+function hideTr() {
+    tableTr.removeClass('active')
+    tableHide.css('display', 'none')
+    tableShow.css('display', 'block')
+}
+
+tableShow.on('click', showTr)
+tableHide.on('click', hideTr)
+
+// табы для таблиц (конец)
