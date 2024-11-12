@@ -706,6 +706,7 @@ main>section {
                 width: calc(100% - 20px);
                 height: 30px;
                 background: url(../images/arrow-2.svg) right center / 100% no-repeat;
+                animation: left-right 2s ease-in-out infinite;
             }
         }
 
@@ -727,6 +728,7 @@ main>section {
                 width: calc(100% - 20px);
                 height: 30px;
                 background: url(../images/arrow-2.svg) right center / 100% no-repeat;
+                animation: left-right 2s ease-in-out infinite;
             }
         }
 
