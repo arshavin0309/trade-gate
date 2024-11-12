@@ -16,7 +16,7 @@ if (document.location.pathname === '/forecasts.html') { document.title = 'Про
 if (document.location.pathname === '/currencies.html') { document.title = 'Валюты' };
 if (document.location.pathname === '/cryptocurrencies.html') { document.title = 'Криптовалюты' };
 if (document.location.pathname === '/stocks.html') { document.title = 'Акции' };
-if (document.location.pathname === '/indexes.html') { document.title = 'Индексы' };
+if (document.location.pathname === '/ies.html') { document.title = 'Индексы' };
 if (document.location.pathname === '/raw-materials.html') { document.title = 'Сырье' };
 if (document.location.pathname === '/history.html') { document.title = 'История компании' };
 if (document.location.pathname === '/why.html') { document.title = 'Почему мы?' };
@@ -124,62 +124,14 @@ $(document).ready(function () {
     });
 });
 
-$('body').hide();
-$('body').fadeIn(1000);
-
-
-
-
-
-
-
-
 let tableBtn = document.querySelectorAll(".start-instruments__btn");
 let tableTable = document.querySelectorAll(".start-instruments__table");
 
 let tableShow = document.querySelector(".start-instruments__show");
 let tableTr = document.querySelectorAll(".start-instruments__table tr");
 
-if (tableShow) {
-    tableShow.addEventListener("click", () => {
-        if (tableShow.textContent === "Показать еще") {
-            for (let i = 0; i < tableTr.length; i++) {
-                tableTr[i].classList.add("active");
-            }
-            tableShow.textContent = "Скрыть";
-            tableShow.classList.add("active");
-        } else {
-            for (let i = 0; i < tableTr.length; i++) {
-                tableTr[i].classList.remove("active");
-            }
-            tableShow.textContent = "Показать еще";
-            document.getElementById('table').scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-            tableShow.classList.remove("active");
-        }
-    });
-}
-
 for (let i = 0; i < tableBtn.length; i++) {
     tableBtn[i].addEventListener("click", () => {
-        if (tableBtn[i].textContent === 'Акции') {
-            tableShow.style = 'display: none;'
-            tableTable[i].classList.add('no-btn');
-        } else {
-            tableShow.style = 'display: flex;';
-
-            for (let b = 0; b < tableTable.length; b++) {
-                tableTable[b].classList.remove('no-btn');
-            };
-        };
-
-        tableShow.textContent = "Показать еще";
-        tableShow.classList.remove('active');
-
-        for (let i = 0; i < tableTr.length; i++) {
-            tableTr[i].classList.remove("active");
-        };
-
         for (let n = 0; n < tableBtn.length; n++) {
             tableBtn[n].classList.remove("active");
             tableTable[n].classList.remove("active");
