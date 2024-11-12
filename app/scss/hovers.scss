@@ -108,19 +108,25 @@
             }
         }
 
-        &__more {
+        &__show {
             &:hover {
                 color: var(--coral);
 
-                svg {
-                    path {
-                        fill: var(--coral);
-                    }
+                &::after {
+                    filter: brightness(0) saturate(100%) invert(74%) sepia(13%) saturate(3857%) hue-rotate(310deg) brightness(98%) contrast(79%);
                 }
             }
         }
 
-        ;
+        &__hide {
+            &:hover {
+                color: var(--coral);
+
+                &::after {
+                    filter: brightness(0) saturate(100%) invert(74%) sepia(13%) saturate(3857%) hue-rotate(310deg) brightness(98%) contrast(79%);
+                }
+            }
+        }
     }
 
     .calendar-find {

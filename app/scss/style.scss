@@ -1006,30 +1006,6 @@ main>section {
         }
     }
 
-    &__more {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 6px;
-        align-items: center;
-        justify-content: center;
-        padding: 13px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 24px;
-        border: none;
-        background: none;
-        cursor: pointer;
-        transition: var(--transition);
-
-        svg {
-            path {
-                transition: var(--transition);
-            }
-        }
-    }
-
     &__list {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -1195,6 +1171,7 @@ main>section {
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
+        transition: var(--transition);
         cursor: pointer;
 
         &::after {
@@ -1203,6 +1180,7 @@ main>section {
             width: 24px;
             height: 24px;
             flex: 0 0 auto;
+            transition: var(--transition);
             background: url(../images/arrow-4.svg) center / contain no-repeat;
         }
     }
@@ -1215,7 +1193,7 @@ main>section {
         display: flex;
         align-items: center;
         gap: 6px;
-        
+
         padding: 13px;
         background: none;
         border: none;
@@ -1223,6 +1201,7 @@ main>section {
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
+        transition: var(--transition);
         cursor: pointer;
 
         &::after {
@@ -1232,6 +1211,7 @@ main>section {
             height: 24px;
             transform: rotate(180deg);
             flex: 0 0 auto;
+            transition: var(--transition);
             background: url(../images/arrow-4.svg) center / contain no-repeat;
         }
     }
