@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1.0">
+    <!-- Берется из js -->
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <a href="/" class="header__logo"></a>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="##">Торговля</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="start.html">С чего начать?</a></li>
+                            <li class="menu-item"><a href="terms.html">Условия торговли</a></li>
+                            <li class="menu-item"><a href="platform.html">Торговая платформа</a></li>
+                            <li class="menu-item"><a href="strategies.html">Торговые стратегии</a></li>
+                            <li class="menu-item"><a href="schedule.html">Часы работы рынка</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="##">Аналитика</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="review.html">Обзор рынка</a></li>
+                            <li class="menu-item"><a href="condition.html">Состояние рынка</a></li>
+                            <li class="menu-item"><a href="news.html">Новости рынка</a></li>
+                            <li class="menu-item"><a href="forecasts.html">Прогнозы рынка</a></li>
+                            <li class="menu-item"><a href="calendar.html">Экономический календарь</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="##">Инструменты</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="currencies.html">Валюты</a></li>
+                            <li class="menu-item"><a href="stocks.html">Акции</a></li>
+                            <li class="menu-item"><a href="indexes.html">Индексы</a></li>
+                            <li class="menu-item"><a href="cryptocurrencies.html">Криптовалюты</a></li>
+                            <li class="menu-item"><a href="raw-materials.html">Сырье</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="##">О нас</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="history.html">История компании</a></li>
+                            <li class="menu-item"><a href="why.html">Почему TradeGate?</a></li>
+                            <li class="menu-item"><a href="documents.html">Документы</a></li>
+                            <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <button class="header__burger"></button>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section>
+        <div class="container">
+            <div class="box">
+                <div class="crumbs">
+                    <a href="/">Главная</a>
+                    <div>Аналитика</div>
+                    <div>Состояние рынка</div>
+                </div>
+                <h1>Состояние рынка</h1>
+                <p class="textm">С TradeGate вы всегда в курсе ключевых новостей, трендов и событий, влияющих на мировые рынки</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="condition-instruments">
+        <div class="container">
+
+            <div class="swiper swiper5">
+                <div class="swiper-wrapper">
+                    <button class="swiper-slide condition-instruments__btn">Состояние рынка</button>
+                    <button class="swiper-slide condition-instruments__btn">Котировки Online</button>
+                    <button class="swiper-slide condition-instruments__btn">Графики Online</button>
+                </div>
+            </div>
+
+            <div class="condition-instruments__box">
+                <div class="swiper swiper6">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide condition-instruments__item">
+                            <p class="textm">Следите за ценами и динамикой финансовых инструментов в режиме реального времени по разным периодам</p>
+
+                            <div class="widget-box">
+                                <script src="https://api.marketcheese.com/widgets/markets/widget.js" data-config='{"language":"ru","orientation":"auto","defaultPeriod":"week","adaptive":true,"devSource":"WDT","groups":[{"name":"Форекс","symbols":"42,48,57,68,87"},{"name":"Товарные фьючерсы","symbols":"127,129,187,188"},{"name":"Акции США","symbols":"11,27,30,35,196"}],"height":390}'></script>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide condition-instruments__item">
+                            <p class="textm">Котировки финансовых рынков с дополнительной информацией и графиками</p>
+
+                            <div class="widget-box">
+                                <script src="https://api.marketcheese.com/widgets/quotes/widget.js" data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":true,"devSource":"WDT","groups":[{"name":"Форекс","symbols":"42,48,57,68,87"},{"name":"Товарные фьючерсы","symbols":"127,129,187,188"},{"name":"Акции США","symbols":"11,27,30,35,196"}],"height":700}'></script>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide condition-instruments__item">
+                            <p class="textm">Используйте главный инструмент трейдеров — технический анализ на графике финансового инструмента</p>
+
+                            <div class="widget-box">
+                                <script src="https://api.marketcheese.com/widgets/chart/widget.js" data-config='{"size":{"height":390},"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"ru","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"EURUSD","devSource":"WDT"}'></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="above-the-banner"></section>
+
+    <section class="banner">
+
+        <div class="container">
+
+            <h2>Торгуя с Trade Gate, вы выбираете надежного партнера для достижения финансовых успехов на глобальных рынках!</h2>
+
+            <a href="##" class="btn-white">Начать торговать</a>
+
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <a href="/" class="footer__logo"></a>
+
+        <ul class="menu">
+
+            <li class="menu-item">
+
+                <a href="##">Торговля</a>
+
+                <ul class="sub-menu">
+
+                    <li class="menu-item"><a href="start.html">С чего начать?</a></li>
+
+                    <li class="menu-item"><a href="terms.html">Условия торговли</a></li>
+
+                    <li class="menu-item"><a href="platform.html">Торговая платформа</a></li>
+
+                    <li class="menu-item"><a href="strategies.html">Торговые стратегии</a></li>
+
+                    <li class="menu-item"><a href="schedule.html">Часы работы рынка</a></li>
+
+                </ul>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="##">Аналитика</a>
+
+                <ul class="sub-menu">
+
+                    <li class="menu-item"><a href="review.html">Обзор рынка</a></li>
+
+                    <li class="menu-item"><a href="condition.html">Состояние рынка</a></li>
+
+                    <li class="menu-item"><a href="news.html">Новости рынка</a></li>
+
+                    <li class="menu-item"><a href="forecasts.html">Прогнозы рынка</a></li>
+
+                    <li class="menu-item"><a href="calendar.html">Экономический календарь</a></li>
+
+                </ul>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="##">Инструменты</a>
+
+                <ul class="sub-menu">
+
+                    <li class="menu-item"><a href="currencies.html">Валюты</a></li>
+
+                    <li class="menu-item"><a href="stocks.html">Акции</a></li>
+
+                    <li class="menu-item"><a href="indexes.html">Индексы</a></li>
+
+                    <li class="menu-item"><a href="cryptocurrencies.html">Криптовалюты</a></li>
+
+                    <li class="menu-item"><a href="raw-materials.html">Сырье</a></li>
+
+                </ul>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="##">О нас</a>
+
+                <ul class="sub-menu">
+
+                    <li class="menu-item"><a href="history.html">История компании</a></li>
+
+                    <li class="menu-item"><a href="why.html">Почему TradeGate?</a></li>
+
+                    <li class="menu-item"><a href="documents.html">Документы</a></li>
+
+                    <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+        <p class="texts">Уведомление о рисках: инвестирование в группы высокого риска: (Forex) и контрактами на разницу (CFD) является спекулятивной операцией, включая высокий риск, и не подходит для каждого инвестора. Вы можете понести частичные, так и полные потери вложенных средств, поэтому мы не советуем инвестировать капитал, которым вы не можете рисковать. Вы должны знать о повышенном риске, связанном с использованием кредитного плеча. Мы настоятельно рекомендуем вам ознакомиться с условиями и услугами нашего веб-сайта, прежде чем начать пользоваться нашим сервисом.</p>
+
+        <p class="texts copyright">©TradeGate 2024. Все права защищены.</p>
+
+    </div>
+
+</footer>
+
+<div class="upButton">
+
+    <img src="images/up-btn.svg">
+
+</div>
+
+<script defer src="/js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -291,7 +291,7 @@ main>section {
         border-radius: 10px;
         background: var(--gradient-coral-purple);
         background-size: 200% 200%;
-        animation: gradient 3s ease infinite;
+        animation: gradient 3s ease-in-out infinite;
     }
 
     &::after {
@@ -550,7 +550,7 @@ main>section {
             padding: 30px 20px;
             background: var(--gradient-coral-purple);
             background-size: 200% 200%;
-            animation: gradient 3s ease infinite;
+            animation: gradient 3s ease-in-out infinite;
 
             h3 {
                 color: var(--white);
@@ -1058,7 +1058,7 @@ main>section {
                 height: 100%;
                 background: var(--gradient-coral-purple);
                 background-size: 200% 200%;
-                animation: gradient 3s ease infinite;
+                animation: gradient 3s ease-in-out infinite;
             }
 
             svg {
@@ -1098,7 +1098,7 @@ main>section {
                 height: 60px;
                 background: var(--gradient-coral-purple);
                 background-size: 200% 100%;
-                animation: gradient 3s ease infinite;
+                animation: gradient 3s ease-in-out infinite;
             }
 
             tr {
@@ -1258,11 +1258,33 @@ main>section {
         background: var(--white);
         border-radius: 5px;
         transition: var(--transition);
+        overflow: hidden;
         cursor: pointer;
 
+        &::before {
+            content: '';
+            opacity: 0;
+            transition: var(--transition);
+            background: var(--gradient-coral-purple);
+            background-size: 200% 200%;
+        }
+
         &.swiper-slide-thumb-active {
+            position: relative;
             color: var(--white);
-            background: var(--coral);
+            //background: var(--coral);
+            background: transparent;
+
+            &::before {
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                animation: gradient 3s ease-in-out infinite;
+            }
         }
     }
 
@@ -1281,7 +1303,7 @@ main>section {
             border-radius: 10px;
             background: var(--gradient-coral-purple);
             background-size: 200% 200%;
-            animation: gradient 3s ease infinite;
+            animation: gradient 3s ease-in-out infinite;
         }
 
         &:nth-child(1) {
@@ -1650,7 +1672,7 @@ main>section {
                 border-radius: 10px;
                 background: var(--gradient-coral-purple);
                 background-size: 200% 200%;
-                animation: gradient 3s ease infinite;
+                animation: gradient 3s ease-in-out infinite;
             }
 
             .platform-platform__links {
@@ -1996,7 +2018,7 @@ main>section {
                 &::before {
                     background: var(--gradient-coral-purple);
                     background-size: 200% 200%;
-                    animation: gradient 3s ease infinite;
+                    animation: gradient 3s ease-in-out infinite;
                 }
 
                 &::after {
@@ -2799,7 +2821,7 @@ main>section {
         color: transparent;
         background: var(--gradient-coral-purple);
         background-size: 200% 200%;
-        animation: gradient 3s ease infinite;
+        animation: gradient 3s ease-in-out infinite;
         background-clip: text;
     }
 
