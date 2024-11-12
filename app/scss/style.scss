@@ -1065,8 +1065,23 @@ main>section {
         }
 
         &.active {
+            position: relative;
             color: var(--white);
-            background: var(--coral);
+            overflow: hidden;
+            background: transparent;
+
+            &::before {
+                z-index: -1;
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--gradient-coral-purple);
+                background-size: 200% 200%;
+                animation: gradient 3s ease infinite;
+            }
 
             svg {
                 circle {
@@ -1168,6 +1183,11 @@ main>section {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
         padding: 13px;
         background: none;
         border: none;
@@ -1176,12 +1196,26 @@ main>section {
         font-weight: 500;
         line-height: 24px;
         cursor: pointer;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            flex: 0 0 auto;
+            background: url(../images/arrow-4.svg) center / contain no-repeat;
+        }
     }
 
     &__hide {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        
         padding: 13px;
         background: none;
         border: none;
@@ -1190,6 +1224,16 @@ main>section {
         font-weight: 500;
         line-height: 24px;
         cursor: pointer;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            transform: rotate(180deg);
+            flex: 0 0 auto;
+            background: url(../images/arrow-4.svg) center / contain no-repeat;
+        }
     }
 
     &__buy {

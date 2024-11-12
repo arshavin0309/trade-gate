@@ -149,13 +149,13 @@ for (let i = 0; i < tableBtn.length; i++) {
 function showTr() {
     tableTr.addClass('active');
     tableShow.css('display', 'none');
-    tableHide.css('display', 'block');
+    tableHide.css('display', 'flex');
 }
 
 function hideTr() {
     tableTr.removeClass('active');
     tableHide.css('display', 'none');
-    tableShow.css('display', 'block');
+    tableShow.css('display', 'flex');
 
     $("body, html").animate({
         scrollTop: $('.start-instruments').offset().top
