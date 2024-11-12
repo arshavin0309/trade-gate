@@ -24,19 +24,17 @@ if (document.location.pathname === '/documents.html') { document.title = 'Док
 if (document.location.pathname === '/about.html') { document.title = 'О Patronus Investments' };
 if (document.location.pathname === '/contacts.html') { document.title = 'Контакты' };
 
-let goTopBtn = document.querySelector('.upButton');
-
 window.addEventListener('scroll', trackScroll);
-goTopBtn.addEventListener('click', backToTop);
+$('.upButton').on('click', backToTop);
 
 function trackScroll() {
     let scrolled = window.pageYOffset;
 
     if (scrolled > 100) {
-        goTopBtn.classList.add('show');
+        $('.upButton').addClass('show');
     };
     if (scrolled < 100) {
-        goTopBtn.classList.remove('show');
+        $('.upButton').removeClass('show');
     };
 };
 
@@ -59,20 +57,6 @@ let swiper1 = new Swiper(".swiper1", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    },
-});
-
-let swiper2 = new Swiper(".swiper2", {
-    spaceBetween: 10,
-    slidesPerView: 5,
-    freeMode: true,
-    watchSlidesProgress: true,
-});
-
-let swiper4 = new Swiper(".swiper3", {
-    spaceBetween: 10,
-    thumbs: {
-        swiper: swiper2,
     },
 });
 
@@ -142,3 +126,66 @@ $(document).ready(function () {
 
 $('body').hide();
 $('body').fadeIn(1000);
+
+
+
+
+
+
+
+
+let tableBtn = document.querySelectorAll(".start-instruments__btn");
+let tableTable = document.querySelectorAll(".start-instruments__table");
+
+let tableShow = document.querySelector(".start-instruments__show");
+let tableTr = document.querySelectorAll(".start-instruments__table tr");
+
+if (tableShow) {
+    tableShow.addEventListener("click", () => {
+        if (tableShow.textContent === "Показать еще") {
+            for (let i = 0; i < tableTr.length; i++) {
+                tableTr[i].classList.add("active");
+            }
+            tableShow.textContent = "Скрыть";
+            tableShow.classList.add("active");
+        } else {
+            for (let i = 0; i < tableTr.length; i++) {
+                tableTr[i].classList.remove("active");
+            }
+            tableShow.textContent = "Показать еще";
+            document.getElementById('table').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            tableShow.classList.remove("active");
+        }
+    });
+}
+
+for (let i = 0; i < tableBtn.length; i++) {
+    tableBtn[i].addEventListener("click", () => {
+        if (tableBtn[i].textContent === 'Акции') {
+            tableShow.style = 'display: none;'
+            tableTable[i].classList.add('no-btn');
+        } else {
+            tableShow.style = 'display: flex;';
+
+            for (let b = 0; b < tableTable.length; b++) {
+                tableTable[b].classList.remove('no-btn');
+            };
+        };
+
+        tableShow.textContent = "Показать еще";
+        tableShow.classList.remove('active');
+
+        for (let i = 0; i < tableTr.length; i++) {
+            tableTr[i].classList.remove("active");
+        };
+
+        for (let n = 0; n < tableBtn.length; n++) {
+            tableBtn[n].classList.remove("active");
+            tableTable[n].classList.remove("active");
+        };
+
+        tableBtn[i].classList.add("active");
+        tableTable[i].classList.add("active");
+    });
+};
