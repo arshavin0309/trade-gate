@@ -131,7 +131,7 @@ let tableShow = $(".start-instruments__show");
 let tableHide = $(".start-instruments__hide");
 let tableTr = $(".start-instruments__table tr");
 
-tableHide.css('display', 'none')
+tableHide.css('display', 'none');
 
 for (let i = 0; i < tableBtn.length; i++) {
     tableBtn.eq(i).on("click", () => {
@@ -142,23 +142,27 @@ for (let i = 0; i < tableBtn.length; i++) {
 
         tableBtn.eq(i).addClass("active");
         tableTable.eq(i).addClass("active");
-        hideTr()
+        hideTr();
     });
 };
 
 function showTr() {
-    tableTr.addClass('active')
-    tableShow.css('display', 'none')
-    tableHide.css('display', 'block')
+    tableTr.addClass('active');
+    tableShow.css('display', 'none');
+    tableHide.css('display', 'block');
 }
 
 function hideTr() {
-    tableTr.removeClass('active')
-    tableHide.css('display', 'none')
-    tableShow.css('display', 'block')
+    tableTr.removeClass('active');
+    tableHide.css('display', 'none');
+    tableShow.css('display', 'block');
+
+    $("body, html").animate({
+        scrollTop: $('.start-instruments').offset().top
+    }, 600);
 }
 
-tableShow.on('click', showTr)
-tableHide.on('click', hideTr)
+tableShow.on('click', showTr);
+tableHide.on('click', hideTr);
 
 // табы для таблиц (конец)

@@ -988,6 +988,13 @@ main>section {
 }
 
 .start-instruments {
+    &::before {
+        content: "";
+        display: block;
+        margin-top: -120px;
+        padding-top: 120px;
+    }
+
     h2 {
         margin-bottom: 15px;
 
@@ -1060,6 +1067,16 @@ main>section {
         &.active {
             color: var(--white);
             background: var(--coral);
+
+            svg {
+                circle {
+                    fill: var(--white);
+                }
+
+                path {
+                    fill: var(--coral);
+                }
+            }
         }
     }
 
@@ -1135,6 +1152,9 @@ main>section {
 
                 span {
                     display: block;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
 
                     &:not(:first-child) {
                         color: #9c9c9c;
