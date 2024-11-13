@@ -1,3 +1,18 @@
 @media (max-width: 600px) {
-    
+    .footer {
+        background: image-set(url(../images/footer-bg-mobile.avif), url(../images/footer-bg-mobile.webp), url(../images/footer-bg-mobile.png)) center bottom / 100% 100% no-repeat;
+
+        .menu {
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .texts {
+            text-align: left;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    }
 }

@@ -101,4 +101,17 @@
             height: 30px;
         }
     }
+
+    section {
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }

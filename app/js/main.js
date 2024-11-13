@@ -183,6 +183,15 @@ if ($(window).width() <= 1024) {
         menuItem.removeClass('active')
     })
 
+    $('.upButton').on('click', function () {
+        $('.header__burger').removeClass('active')
+        $('.header__box').removeClass('active')
+        $('.header .menu').removeClass('active')
+
+        subMenu.slideUp()
+        menuItem.removeClass('active')
+    });
+
     for (let i = 0; i < menuItem.length; i++) {
         menuItem.eq(i).on('click', function () {
 

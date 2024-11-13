@@ -399,7 +399,7 @@ main>section {
             &>a {
                 display: block;
                 margin-bottom: 10px;
-                font-size: 24px;
+                font-size: clamp(18px, 4vw, 24px);
                 font-weight: 600;
                 line-height: 32px;
                 text-decoration: none;
@@ -416,7 +416,7 @@ main>section {
                 a {
                     text-decoration: none;
                     color: var(--black);
-                    font-size: 18px;
+                    font-size: clamp(16px, 3vw, 18px);
                     font-weight: 500;
                     line-height: 24px;
                 }
