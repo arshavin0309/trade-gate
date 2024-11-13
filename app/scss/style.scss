@@ -53,7 +53,7 @@ html, body {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 68px;
+    font-size: clamp(32px, 7vw, 68px);
     font-weight: 600;
     line-height: 117%;
     text-align: center;
@@ -178,6 +178,7 @@ h3 {
                     content: '';
                     width: 24px;
                     height: 24px;
+                    transition: var(--transition);
                     background: url(../images/menu-bottom.svg) center / 10px 6px no-repeat;
                 }
             }

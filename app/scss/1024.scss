@@ -35,9 +35,26 @@
             }
 
             &>.menu-item {
+                transition: var(--transition);
+
+                &.active {
+                    background: var(--coral);
+
+                    &>a {
+                        color: var(--white);
+                        outline: 1px solid var(--coral);
+
+                        &::after {
+                            transform: rotate(-180deg);
+                            filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(316deg) brightness(110%) contrast(101%);
+                        }
+                    }
+                }
+
                 &>a {
                     padding: 15px;
                     border-bottom: 1px solid var(--coral);
+                    transition: var(--transition);
                 }
 
                 .sub-menu {
