@@ -9,4 +9,20 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    main {
+        &>section {
+            &:first-child {
+                &.index-hero {
+                    .box {
+                        padding: 140px 0 30px;
+                    }
+                }
+
+                .box {
+                    padding: 140px 0 30px;
+                }
+            }
+        }
+    }
 }
