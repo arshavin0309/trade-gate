@@ -42,7 +42,7 @@
 
                 .sub-menu {
                     display: none;
-                    padding: 30px;
+                    padding: 20px 0;
                     gap: 25px;
                     visibility: initial;
                     position: initial;
@@ -57,6 +57,8 @@
                     }
 
                     a {
+                        display: block;
+                        padding: 10px 30px;
                         font-size: 16px;
                     }
                 }

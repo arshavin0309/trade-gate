@@ -179,7 +179,15 @@ $('.header__burger').on('click', function () {
 
 for (let i = 0; i < menuItem.length; i++) {
     menuItem.eq(i).on('click', function () {
-        subMenu.slideUp()
-        subMenu.eq(i).slideDown()
+        if (subMenu.eq(i).hasClass('active')) {
+            subMenu.eq(i).removeClass('active')
+            subMenu.eq(i).slideUp()
+        } else {
+            subMenu.slideUp()
+            subMenu.removeClass('active')
+
+            subMenu.eq(i).slideDown()
+            subMenu.eq(i).addClass('active')
+        }
     })
 }
