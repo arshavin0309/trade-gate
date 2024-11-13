@@ -166,3 +166,20 @@ tableShow.on('click', showTr);
 tableHide.on('click', hideTr);
 
 // табы для таблиц (конец)
+
+let menuItem = $('.header .menu > .menu-item')
+let subMenu = $('.header .menu > .menu-item .sub-menu')
+
+$('.header__burger').on('click', function () {
+    $('.header__burger').toggleClass('active')
+    $('.header__box').toggleClass('active')
+    $('.header .menu').toggleClass('active')
+    subMenu.slideUp()
+})
+
+for (let i = 0; i < menuItem.length; i++) {
+    menuItem.eq(i).on('click', function () {
+        subMenu.slideUp()
+        subMenu.eq(i).slideDown()
+    })
+}

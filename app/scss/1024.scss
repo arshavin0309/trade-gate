@@ -1,3 +1,85 @@
 @media (max-width: 1024px) {
-    
+    .header {
+        &__box {
+            height: 80px;
+            padding: 20px 10px;
+            transition: var(--transition);
+
+            &.active {
+                max-width: 100%;
+                top: 0;
+                height: 90px;
+                padding: 20px 15px;
+                border-radius: 0;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+        }
+
+        .menu {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 90px);
+            flex-direction: column;
+            gap: 0;
+            background: var(--white);
+            transform: translateY(110%);
+            transition: var(--transition);
+
+            &.active {
+                transform: none;
+                top: 90px;
+            }
+
+            &>.menu-item {
+                &>a {
+                    padding: 15px;
+                    border-bottom: 1px solid var(--coral);
+                }
+
+                .sub-menu {
+                    display: none;
+                    padding: 30px;
+                    gap: 25px;
+                    visibility: initial;
+                    position: initial;
+                    transform: none;
+                    opacity: 1;
+                    border-radius: 0;
+                    box-shadow: none;
+                    border-bottom: 1px solid var(--coral);
+
+                    &::before {
+                        display: none;
+                    }
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        &__burger {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url(../images/header-burger.svg) center / contain no-repeat;
+            transition: var(--transition);
+            border: none;
+
+            &.active {
+                transform: rotate(-360deg);
+                background: url(../images/close.svg) center / contain no-repeat;
+            }
+        }
+
+        &__logo {
+            width: 152px;
+            height: 30px;
+        }
+    }
 }

@@ -46,6 +46,11 @@
     padding-right: 30px;
 }
 
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 68px;
@@ -1371,6 +1376,7 @@ main>section {
             height: 6px;
             background: #717171;
             border-radius: 50px;
+            flex: 0 0 auto;
             transform: translateY(5px);
         }
     }
