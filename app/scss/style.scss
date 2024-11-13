@@ -2978,8 +2978,8 @@ main>section {
         line-height: 24px;
 
         &[type="checkbox"] {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             border-radius: 10px;
         }
 
@@ -3027,7 +3027,7 @@ main>section {
 
     label[for="checkbox"] {
         display: grid;
-        grid-template-columns: 40px 385px;
+        grid-template-columns: 30px 385px;
         gap: 15px;
         align-items: center;
         font-size: 14px;
