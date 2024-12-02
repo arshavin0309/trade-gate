@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1.0">
+    <!-- Берется из js -->
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <a href="/" class="header__logo"></a>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="##">Торговля</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="start.html">С чего начать?</a></li>
+                            <li class="menu-item"><a href="terms.html">Условия торговли</a></li>
+                            <li class="menu-item"><a href="platform.html">Торговая платформа</a></li>
+                            <li class="menu-item"><a href="strategies.html">Торговые стратегии</a></li>
+                            <li class="menu-item"><a href="schedule.html">Часы работы рынка</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="##">Аналитика</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="review.html">Обзор рынка</a></li>
+                            <li class="menu-item"><a href="condition.html">Состояние рынка</a></li>
+                            <li class="menu-item"><a href="news.html">Новости рынка</a></li>
+                            <li class="menu-item"><a href="forecasts.html">Прогнозы рынка</a></li>
+                            <li class="menu-item"><a href="calendar.html">Экономический календарь</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="##">Инструменты</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="currencies.html">Валюты</a></li>
+                            <li class="menu-item"><a href="stocks.html">Акции</a></li>
+                            <li class="menu-item"><a href="indexes.html">Индексы</a></li>
+                            <li class="menu-item"><a href="cryptocurrencies.html">Криптовалюты</a></li>
+                            <li class="menu-item"><a href="raw-materials.html">Сырье</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="##">О нас</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="history.html">История компании</a></li>
+                            <li class="menu-item"><a href="why.html">Почему TradeGate?</a></li>
+                            <li class="menu-item"><a href="documents.html">Документы</a></li>
+                            <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <button class="header__burger"></button>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section>
+        <div class="container">
+            <div class="box">
+                <div class="crumbs">
+                    <a href="/">Главная</a>
+                    <div>Торговля</div>
+                    <div>С чего начать?</div>
+                </div>
+                <h1>Готовы начать свой путь в мире трейдинга?</h1>
+                <p class="textm">С TradeGate вы получаете всё необходимое для уверенного старта: простая регистрация, обучающие материалы, профессиональная аналитика и доступ к более чем 5000 мировых рынков. Начните торговать уже сегодня!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="start-instruments">
+        <div class="container">
+            <h2>Торговые инструменты</h2>
+            <p class="textm">Широкий выбор торговых инструментов: торгуйте валютными парами, биржевыми индексами, акциями и облигациями, сырьем</p>
+
+            <div class="start-instruments__list">
+                <button class="start-instruments__btn active">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.5" cy="15" r="15" fill="#E08178" />
+                        <path d="M9.66667 20.8322C9.66667 21.0532 9.75446 21.2652 9.91074 21.4214C10.067 21.5777 10.279 21.6655 10.5 21.6655H20.5C20.721 21.6655 20.933 21.5777 21.0893 21.4214C21.2455 21.2652 21.3333 21.0532 21.3333 20.8322C21.3333 20.6572 21.275 20.4905 21.1833 20.3572L16.3333 11.9572V8.33219H14.6667V11.9572L9.81667 20.3572C9.725 20.4905 9.66667 20.6572 9.66667 20.8322ZM10.5 23.3322C9.83696 23.3322 9.20107 23.0688 8.73223 22.6C8.26339 22.1311 8 21.4952 8 20.8322C8 20.3322 8.15 19.8655 8.41667 19.4739L13 11.5072V9.99886C12.779 9.99886 12.567 9.91106 12.4107 9.75478C12.2545 9.5985 12.1667 9.38654 12.1667 9.16553V8.33219C12.1667 7.89017 12.3423 7.46624 12.6548 7.15368C12.9674 6.84112 13.3913 6.66553 13.8333 6.66553H17.1667C17.6087 6.66553 18.0326 6.84112 18.3452 7.15368C18.6577 7.46624 18.8333 7.89017 18.8333 8.33219V9.16553C18.8333 9.38654 18.7455 9.5985 18.5893 9.75478C18.433 9.91106 18.221 9.99886 18 9.99886V11.5072L22.5833 19.4739C22.85 19.8655 23 20.3322 23 20.8322C23 21.4952 22.7366 22.1311 22.2678 22.6C21.7989 23.0688 21.163 23.3322 20.5 23.3322H10.5ZM16.3333 18.3322L17.45 17.2155L19.0583 19.9989H11.9417L14.1583 16.1572L16.3333 18.3322ZM15.9167 14.9989C16.0272 14.9989 16.1332 15.0428 16.2113 15.1209C16.2894 15.199 16.3333 15.305 16.3333 15.4155C16.3333 15.526 16.2894 15.632 16.2113 15.7102C16.1332 15.7883 16.0272 15.8322 15.9167 15.8322C15.8062 15.8322 15.7002 15.7883 15.622 15.7102C15.5439 15.632 15.5 15.526 15.5 15.4155C15.5 15.305 15.5439 15.199 15.622 15.1209C15.7002 15.0428 15.8062 14.9989 15.9167 14.9989Z" fill="white" />
+                    </svg>
+                    Валюты
+                </button>
+
+                <button class="start-instruments__btn">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.5" cy="15" r="15" fill="#E08178" />
+                        <path d="M23.8334 22.5H7.16675V7.5H8.83341V20.8333H10.5001V19.1667H13.8334V20.8333H15.5001V18.3333H18.8334V20.8333H20.5001V19.1667H23.8334V22.5ZM20.5001 16.6667H23.8334V18.3333H20.5001V16.6667ZM15.5001 10H18.8334V12.5H15.5001V10ZM18.8334 17.5H15.5001V13.3333H18.8334V17.5ZM10.5001 13.3333H13.8334V15H10.5001V13.3333ZM13.8334 18.3333H10.5001V15.8333H13.8334V18.3333Z" fill="white" />
+                    </svg>
+                    Индексы</button>
+
+                <button class="start-instruments__btn">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.5" cy="15" r="15" fill="#E08178" />
+                        <path d="M9.66667 20.8322C9.66667 21.0532 9.75446 21.2652 9.91074 21.4214C10.067 21.5777 10.279 21.6655 10.5 21.6655H20.5C20.721 21.6655 20.933 21.5777 21.0893 21.4214C21.2455 21.2652 21.3333 21.0532 21.3333 20.8322C21.3333 20.6572 21.275 20.4905 21.1833 20.3572L16.3333 11.9572V8.33219H14.6667V11.9572L9.81667 20.3572C9.725 20.4905 9.66667 20.6572 9.66667 20.8322ZM10.5 23.3322C9.83696 23.3322 9.20107 23.0688 8.73223 22.6C8.26339 22.1311 8 21.4952 8 20.8322C8 20.3322 8.15 19.8655 8.41667 19.4739L13 11.5072V9.99886C12.779 9.99886 12.567 9.91106 12.4107 9.75478C12.2545 9.5985 12.1667 9.38654 12.1667 9.16553V8.33219C12.1667 7.89017 12.3423 7.46624 12.6548 7.15368C12.9674 6.84112 13.3913 6.66553 13.8333 6.66553H17.1667C17.6087 6.66553 18.0326 6.84112 18.3452 7.15368C18.6577 7.46624 18.8333 7.89017 18.8333 8.33219V9.16553C18.8333 9.38654 18.7455 9.5985 18.5893 9.75478C18.433 9.91106 18.221 9.99886 18 9.99886V11.5072L22.5833 19.4739C22.85 19.8655 23 20.3322 23 20.8322C23 21.4952 22.7366 22.1311 22.2678 22.6C21.7989 23.0688 21.163 23.3322 20.5 23.3322H10.5ZM16.3333 18.3322L17.45 17.2155L19.0583 19.9989H11.9417L14.1583 16.1572L16.3333 18.3322ZM15.9167 14.9989C16.0272 14.9989 16.1332 15.0428 16.2113 15.1209C16.2894 15.199 16.3333 15.305 16.3333 15.4155C16.3333 15.526 16.2894 15.632 16.2113 15.7102C16.1332 15.7883 16.0272 15.8322 15.9167 15.8322C15.8062 15.8322 15.7002 15.7883 15.622 15.7102C15.5439 15.632 15.5 15.526 15.5 15.4155C15.5 15.305 15.5439 15.199 15.622 15.1209C15.7002 15.0428 15.8062 14.9989 15.9167 14.9989Z" fill="white" />
+                    </svg>
+                    Сырье</button>
+
+                <button class="start-instruments__btn">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.5" cy="15" r="15" fill="#E08178" />
+                        <path d="M9.66667 20.8322C9.66667 21.0532 9.75446 21.2652 9.91074 21.4214C10.067 21.5777 10.279 21.6655 10.5 21.6655H20.5C20.721 21.6655 20.933 21.5777 21.0893 21.4214C21.2455 21.2652 21.3333 21.0532 21.3333 20.8322C21.3333 20.6572 21.275 20.4905 21.1833 20.3572L16.3333 11.9572V8.33219H14.6667V11.9572L9.81667 20.3572C9.725 20.4905 9.66667 20.6572 9.66667 20.8322ZM10.5 23.3322C9.83696 23.3322 9.20107 23.0688 8.73223 22.6C8.26339 22.1311 8 21.4952 8 20.8322C8 20.3322 8.15 19.8655 8.41667 19.4739L13 11.5072V9.99886C12.779 9.99886 12.567 9.91106 12.4107 9.75478C12.2545 9.5985 12.1667 9.38654 12.1667 9.16553V8.33219C12.1667 7.89017 12.3423 7.46624 12.6548 7.15368C12.9674 6.84112 13.3913 6.66553 13.8333 6.66553H17.1667C17.6087 6.66553 18.0326 6.84112 18.3452 7.15368C18.6577 7.46624 18.8333 7.89017 18.8333 8.33219V9.16553C18.8333 9.38654 18.7455 9.5985 18.5893 9.75478C18.433 9.91106 18.221 9.99886 18 9.99886V11.5072L22.5833 19.4739C22.85 19.8655 23 20.3322 23 20.8322C23 21.4952 22.7366 22.1311 22.2678 22.6C21.7989 23.0688 21.163 23.3322 20.5 23.3322H10.5ZM16.3333 18.3322L17.45 17.2155L19.0583 19.9989H11.9417L14.1583 16.1572L16.3333 18.3322ZM15.9167 14.9989C16.0272 14.9989 16.1332 15.0428 16.2113 15.1209C16.2894 15.199 16.3333 15.305 16.3333 15.4155C16.3333 15.526 16.2894 15.632 16.2113 15.7102C16.1332 15.7883 16.0272 15.8322 15.9167 15.8322C15.8062 15.8322 15.7002 15.7883 15.622 15.7102C15.5439 15.632 15.5 15.526 15.5 15.4155C15.5 15.305 15.5439 15.199 15.622 15.1209C15.7002 15.0428 15.8062 14.9989 15.9167 14.9989Z" fill="white" />
+                    </svg>
+                    Акции США</button>
+
+                <button class="start-instruments__btn">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.5" cy="15" r="15" fill="#E08178" />
+                        <path d="M9.66667 20.8322C9.66667 21.0532 9.75446 21.2652 9.91074 21.4214C10.067 21.5777 10.279 21.6655 10.5 21.6655H20.5C20.721 21.6655 20.933 21.5777 21.0893 21.4214C21.2455 21.2652 21.3333 21.0532 21.3333 20.8322C21.3333 20.6572 21.275 20.4905 21.1833 20.3572L16.3333 11.9572V8.33219H14.6667V11.9572L9.81667 20.3572C9.725 20.4905 9.66667 20.6572 9.66667 20.8322ZM10.5 23.3322C9.83696 23.3322 9.20107 23.0688 8.73223 22.6C8.26339 22.1311 8 21.4952 8 20.8322C8 20.3322 8.15 19.8655 8.41667 19.4739L13 11.5072V9.99886C12.779 9.99886 12.567 9.91106 12.4107 9.75478C12.2545 9.5985 12.1667 9.38654 12.1667 9.16553V8.33219C12.1667 7.89017 12.3423 7.46624 12.6548 7.15368C12.9674 6.84112 13.3913 6.66553 13.8333 6.66553H17.1667C17.6087 6.66553 18.0326 6.84112 18.3452 7.15368C18.6577 7.46624 18.8333 7.89017 18.8333 8.33219V9.16553C18.8333 9.38654 18.7455 9.5985 18.5893 9.75478C18.433 9.91106 18.221 9.99886 18 9.99886V11.5072L22.5833 19.4739C22.85 19.8655 23 20.3322 23 20.8322C23 21.4952 22.7366 22.1311 22.2678 22.6C21.7989 23.0688 21.163 23.3322 20.5 23.3322H10.5ZM16.3333 18.3322L17.45 17.2155L19.0583 19.9989H11.9417L14.1583 16.1572L16.3333 18.3322ZM15.9167 14.9989C16.0272 14.9989 16.1332 15.0428 16.2113 15.1209C16.2894 15.199 16.3333 15.305 16.3333 15.4155C16.3333 15.526 16.2894 15.632 16.2113 15.7102C16.1332 15.7883 16.0272 15.8322 15.9167 15.8322C15.8062 15.8322 15.7002 15.7883 15.622 15.7102C15.5439 15.632 15.5 15.526 15.5 15.4155C15.5 15.305 15.5439 15.199 15.622 15.1209C15.7002 15.0428 15.8062 14.9989 15.9167 14.9989Z" fill="white" />
+                    </svg>
+                    Облигации</button>
+            </div>
+
+            <div class="start-instruments__box">
+                <div class="start-instruments__table active">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><span>AUDCAD</span><span>Australian Dollar vs Canadian Dollar</span></td>
+                                <td>1: 100</td>
+                                <td>100000 AUD</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AUDCHF</span><span>Australian Dollar vs Swiss Franc</span></td>
+                                <td>1: 100</td>
+                                <td>100000 AUD</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AUDJPY</span><span>Australian Dollar vs Japanese Yen</span></td>
+                                <td>1: 100</td>
+                                <td>100000 AUD</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AUDNZD</span><span>Australian Dollar vs New Zealand Dollar</span></td>
+                                <td>1: 100</td>
+                                <td>100000 AUD</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AUDUSD</span><span>Australian Dollar vs US Dollar</span></td>
+                                <td>1: 100</td>
+                                <td>100000 AUD</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURAUD</span><span>Euro vs Australian Dollar</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURCAD</span><span>Euro vs Canadian Dollar</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURCHF</span><span>Euro vs Swiss Franc</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURCZK</span><span>Euro vs Czech Republic Koruna</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURNOK</span><span>Euro vs Norwegian Krone</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURNZD</span><span>Euro vs New Zealand Dollar</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURSEK</span><span>Euro vs Swedish Krona</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURGBP</span><span>Euro vs British Pound</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURHUF</span><span>Euro vs Hungarian Forint</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURJPY</span><span>Euro vs Japanese Yen</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EURRON</span><span>Euro vs Romanian Leu</span></td>
+                                <td>1: 100</td>
+                                <td>100000 EUR</td>
+                                <td>Пн-Пт 00.00-23.59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button class="start-instruments__show">Смотреть больше</button>
+                    <button class="start-instruments__hide">Скрыть</button>
+                </div>
+
+                <div class="start-instruments__table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><span>W20</span><span>Polish 20 Index</span></td>
+                                <td>1:50</td>
+                                <td>20</td>
+                                <td>08:45-16:50</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>USTEC</span><span>NASDAQ Index</span></td>
+                                <td>1:50</td>
+                                <td>25</td>
+                                <td>00:05-22:15</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>US500</span><span>Standard &amp; Poor’s Index</span></td>
+                                <td>1:50</td>
+                                <td>50</td>
+                                <td>00:05-22:15</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>US30</span><span>Dow Jones Index</span></td>
+                                <td>1:50</td>
+                                <td>10</td>
+                                <td>00:05-22:15</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>UK100</span><span>FTSE 100 Index</span></td>
+                                <td>1:50</td>
+                                <td>25</td>
+                                <td>02:00-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>SUI30</span><span>Swiss Market Index</span></td>
+                                <td>1:50</td>
+                                <td>30</td>
+                                <td>08:00-17:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>RUSSELL 2000</span><span>Russell 2000 Index</span></td>
+                                <td>1:50</td>
+                                <td>2</td>
+                                <td>04:05-23:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>RTS</span><span>РТС Index</span></td>
+                                <td>1:50</td>
+                                <td>50</td>
+                                <td>09:05-17:45</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>NED25</span><span>Netherlands index</span></td>
+                                <td>1:50</td>
+                                <td>250</td>
+                                <td>08:00-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>MICEX</span><span>Индекс МосБиржи</span></td>
+                                <td>1:50</td>
+                                <td>30</td>
+                                <td>09:05-17:45</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>MEXCOMP</span><span>Mexica Index</span></td>
+                                <td>1:50</td>
+                                <td>5</td>
+                                <td>14:30-21:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>KOSP200</span><span>South Korea Index</span></td>
+                                <td>1:50</td>
+                                <td>200</td>
+                                <td>02:05-08:10</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>JP225</span><span>Nikkei Index</span></td>
+                                <td>1:50</td>
+                                <td>10</td>
+                                <td>02:05-8:10<br>09:35-18:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>INDIA50b</span><span>India Index</span></td>
+                                <td>1:50</td>
+                                <td>15</td>
+                                <td>05:50-12:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>HUNComp</span><span>Hungary Index</span></td>
+                                <td>1:50</td>
+                                <td>5</td>
+                                <td>09:10-17:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>HKO43</span><span>Hang Seng Index</span></td>
+                                <td>1:50</td>
+                                <td>7</td>
+                                <td>03:20-06:00<br>07:35-10:15</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>F40</span><span>CAC Index</span></td>
+                                <td>1:50</td>
+                                <td>40</td>
+                                <td>08:00-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EUROSTOX50</span><span>EuroStoxx Index</span></td>
+                                <td>1:50</td>
+                                <td>50</td>
+                                <td>08:00-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>DE30</span><span>DAX Index</span></td>
+                                <td>1:50</td>
+                                <td>30</td>
+                                <td>08:00-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>CZKCASH</span><span>Czeck Index</span></td>
+                                <td>1:50</td>
+                                <td>150</td>
+                                <td>09:20-16:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>CHNComp</span><span>China Index</span></td>
+                                <td>1:50</td>
+                                <td>20</td>
+                                <td>03:20-06:00<br>07:35-10:15</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>BraComp</span><span>Brasilian Index</span></td>
+                                <td>1:50</td>
+                                <td>1</td>
+                                <td>14:05-22:55</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>ASX200</span><span>Australia Index</span></td>
+                                <td>1:50</td>
+                                <td>20</td>
+                                <td>02:05-08:30<br>09:15-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button class="start-instruments__show">Смотреть больше</button>
+                    <button class="start-instruments__hide">Скрыть</button>
+                </div>
+
+                <div class="start-instruments__table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><span>BRENT</span><span>Brent Crude Oil</span></td>
+                                <td>1:50</td>
+                                <td>2000</td>
+                                <td>02:05-23:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>COCOA</span><span>Cocoa</span></td>
+                                <td>1:50</td>
+                                <td>50</td>
+                                <td>10:45-19:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>CT</span><span>US Cotton No.2</span></td>
+                                <td>1:50</td>
+                                <td>1500</td>
+                                <td>08:30-20:20</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>KC</span><span>US Coffe</span></td>
+                                <td>1:50</td>
+                                <td>1500</td>
+                                <td>10:15-19:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>NG</span><span>Natural Gas</span></td>
+                                <td>1:50</td>
+                                <td>50000</td>
+                                <td>08:30-23:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>SB</span><span>US Sugar No.11</span></td>
+                                <td>1:50</td>
+                                <td>10000</td>
+                                <td>09:30-19:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>WHEAT</span><span>Wheat</span></td>
+                                <td>1:50</td>
+                                <td>400</td>
+                                <td>02:05-14:45<br>15:35-20:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>WTI</span><span>WTI Light Cruide Oil</span></td>
+                                <td>1:50</td>
+                                <td>2000</td>
+                                <td>02:05-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>ZC</span><span>US Corn</span></td>
+                                <td>1:50</td>
+                                <td>300</td>
+                                <td>02:05-20:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>ZS</span><span>US Soybeans</span></td>
+                                <td>1:50</td>
+                                <td>150</td>
+                                <td>02:05-20:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>ZINC</span><span>ZINC</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>08:30-19:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>SILVER</span><span>Silver (spot)</span></td>
+                                <td>1:50</td>
+                                <td>10000</td>
+                                <td>00:05-22:59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>PLATINUM</span><span>Platinum</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>00:05-22:59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>PA</span><span>Palladium</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>00:05-22:59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>NICKEL</span><span>Nickel</span></td>
+                                <td>1:50</td>
+                                <td>10</td>
+                                <td>08:30-19:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GOLD</span><span>Gold (spot)</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>00:05-22:59</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>COPPER</span><span>Copper</span></td>
+                                <td>1:50</td>
+                                <td>10</td>
+                                <td>08:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>ALUMINIUM</span><span>Aluminium</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>08:30-19:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button class="start-instruments__show">Смотреть больше</button>
+                    <button class="start-instruments__hide">Скрыть</button>
+                </div>
+
+                <div class="start-instruments__table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><span>AA</span><span>Alcoa Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AAPL</span><span>Apple Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AMZN</span><span>Amazon Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AXP</span><span>American Express Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>BA</span><span>Boeing Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>BAC</span><span>Bank of America Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>BP</span><span>British Petroleum</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>CAT</span><span>Caterpillar Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>CSCO</span><span>Cisco Sys Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>CVX</span><span>Chevron Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>DIS</span><span>Walt Disney Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EBAY</span><span>Ebay Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>FB</span><span>Facebook Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GE</span><span>General Electric Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GOOG</span><span>Alphabet Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>HAL</span><span>Halliburton Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>HD</span><span>Home Depot Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>HON</span><span>HoneyWell Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>HPQ</span><span>Hewlett Packard Inc.</span></td>
+                                <td>1:50</td>
+                                <td>1000</td>
+                                <td>15:30-22:00</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button class="start-instruments__show">Смотреть больше</button>
+                    <button class="start-instruments__hide">Скрыть</button>
+                </div>
+
+                <div class="start-instruments__table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Полное название</th>
+                                <th>Плечо</th>
+                                <th>Размер контракта</th>
+                                <th>Время торговли</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><span>YNDX</span><span>Yandex</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>SBER</span><span>Sberbank</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>ROSN</span><span>Rosneft</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>LKOH</span><span>LUKOIL</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GAZP</span><span>Gazprom</span></td>
+                                <td>1:50</td>
+                                <td>100</td>
+                                <td>09:00–17:30</td>
+                                <td><a href="##" class="start-instruments__buy">Купить</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="index-start">
+
+        <div class="container">
+
+            <h2>3 простых шага, чтобы начать торговать:</h2>
+
+            <ul class="index-start__list">
+
+                <div class="index-start__item">
+
+                    <h3>Откройте счет</h3>
+
+                    <p class="textm">Зарегистрируйтесь в личном кабинете и откройте торговый счет</p>
+
+                    <a href="##" class="btn-white">
+
+                        <div>Начать торговать</div>
+
+                    </a>
+
+                </div>
+
+                <div class="index-start__item">
+
+                    <h3>Пополните счет</h3>
+
+                    <p class="textm">Выберите подходящий вам способ пополнения средств из нескольких вариантов</p>
+
+                    <a href="##" class="btn-white">
+
+                        <div>Начать торговать</div>
+
+                    </a>
+
+                </div>
+
+                <div class="index-start__item">
+
+                    <h3>Начните торговать</h3>
+
+                    <p class="textm">Перейдите в Web Terminal с нашего сайта, авторизуйтесь и начните зарабатывать</p>
+
+                    <a href="##" class="btn-white">
+
+                        <div>Начать торговать</div>
+
+                    </a>
+
+                </div>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="above-the-banner"></section>
+
+    <section class="banner">
+
+        <div class="container">
+
+            <h2>Ваша торговля — ваш выбор, ваш успех</h2>
+
+            <a href="##" class="btn-white">Открыть счет</a>
+
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <a href="/" class="footer__logo"></a>
+
+        <ul class="menu">
+
+            <li class="menu-item">
+
+                <a href="##">Торговля</a>
+
+                <ul class="sub-menu">
+
+                    <li class="menu-item"><a href="start.html">С чего начать?</a></li>
+
+                    <li class="menu-item"><a href="terms.html">Условия торговли</a></li>
+
+                    <li class="menu-item"><a href="platform.html">Торговая платформа</a></li>
+
+                    <li class="menu-item"><a href="strategies.html">Торговые стратегии</a></li>
+
+                    <li class="menu-item"><a href="schedule.html">Часы работы рынка</a></li>
+
+                </ul>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="##">Аналитика</a>
+
+                <ul class="sub-menu">
+
+                    <li class="menu-item"><a href="review.html">Обзор рынка</a></li>
+
+                    <li class="menu-item"><a href="condition.html">Состояние рынка</a></li>
+
+                    <li class="menu-item"><a href="news.html">Новости рынка</a></li>
+
+                    <li class="menu-item"><a href="forecasts.html">Прогнозы рынка</a></li>
+
+                    <li class="menu-item"><a href="calendar.html">Экономический календарь</a></li>
+
+                </ul>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="##">Инструменты</a>
+
+                <ul class="sub-menu">
+
+                    <li class="menu-item"><a href="currencies.html">Валюты</a></li>
+
+                    <li class="menu-item"><a href="stocks.html">Акции</a></li>
+
+                    <li class="menu-item"><a href="indexes.html">Индексы</a></li>
+
+                    <li class="menu-item"><a href="cryptocurrencies.html">Криптовалюты</a></li>
+
+                    <li class="menu-item"><a href="raw-materials.html">Сырье</a></li>
+
+                </ul>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="##">О нас</a>
+
+                <ul class="sub-menu">
+
+                    <li class="menu-item"><a href="history.html">История компании</a></li>
+
+                    <li class="menu-item"><a href="why.html">Почему TradeGate?</a></li>
+
+                    <li class="menu-item"><a href="documents.html">Документы</a></li>
+
+                    <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+        <p class="texts">Уведомление о рисках: инвестирование в группы высокого риска: (Forex) и контрактами на разницу (CFD) является спекулятивной операцией, включая высокий риск, и не подходит для каждого инвестора. Вы можете понести частичные, так и полные потери вложенных средств, поэтому мы не советуем инвестировать капитал, которым вы не можете рисковать. Вы должны знать о повышенном риске, связанном с использованием кредитного плеча. Мы настоятельно рекомендуем вам ознакомиться с условиями и услугами нашего веб-сайта, прежде чем начать пользоваться нашим сервисом.</p>
+
+        <p class="texts copyright">©TradeGate 2024. Все права защищены.</p>
+
+    </div>
+
+</footer>
+
+<div class="upButton">
+
+    <img src="images/up-btn.svg">
+
+</div>
+
+<script defer src="js/main.min.js"></script>
+
+</body>
+
+</html>
