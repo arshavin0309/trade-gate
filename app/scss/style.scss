@@ -46,7 +46,8 @@
     padding-right: 30px;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -3046,6 +3047,16 @@ main>section {
             transition: var(--transition);
             color: #666666;
         }
+    }
+}
+
+.swiper10 {
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+        background: red;
     }
 }
 

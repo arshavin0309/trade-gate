@@ -218,3 +218,15 @@ if ($(window).width() <= 1024) {
 }
 
 // мобильное меню (конец)
+
+var swiper10 = new Swiper(".swiper10", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    speed: 3000,
+    autoplay: {
+        delay: 0,
+    },
+    loop: true,
+    slidesPerView: 'auto',
+    // disableOnInteraction: true,
+});
