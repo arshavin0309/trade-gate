@@ -1,4 +1,4 @@
-// Установка title, для wp не понадобиться
+// Установка title !!! ДЛЯ CMS НЕ ПОНАДОБИТЬСЯ (начало)
 if (document.location.pathname === '/') { document.title = 'Главная' };
 if (document.location.pathname === '/start.html') { document.title = 'С чего начать?' };
 if (document.location.pathname === '/404.html') { document.title = 'Страница не найдена' };
@@ -24,6 +24,10 @@ if (document.location.pathname === '/documents.html') { document.title = 'Док
 if (document.location.pathname === '/about.html') { document.title = 'О Patronus Investments' };
 if (document.location.pathname === '/contacts.html') { document.title = 'Контакты' };
 
+// Установка title (конец)
+
+// кнопка вверх (начало)
+
 $(window).on('scroll', trackScroll);
 $('.upButton').on('click', backToTop);
 
@@ -44,6 +48,8 @@ function backToTop() {
         behavior: "smooth"
     });
 };
+
+// кнопка вверх (конец)
 
 let swiper1 = new Swiper(".swiper1", {
     slidesPerView: 3,
