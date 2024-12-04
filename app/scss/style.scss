@@ -872,21 +872,21 @@ main>section {
     }
 
     &__name {
-        font-size: 18px;
+        font-size: clamp(16px, 3vw, 18px);
         font-weight: 500;
-        line-height: 24px;
+        line-height: 130%;
     }
 
     &__price {
-        font-size: 18px;
+        font-size: clamp(16px, 3vw, 18px);
         font-weight: 500;
-        line-height: 24px;
+        line-height: 130%;
     }
 
     &__condition {
-        font-size: 18px;
+        font-size: clamp(16px, 3vw, 18px);
         font-weight: 500;
-        line-height: 24px;
+        line-height: 130%;
     }
 
     .green {

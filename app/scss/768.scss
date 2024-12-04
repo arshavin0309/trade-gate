@@ -39,6 +39,10 @@
     }
 
     .index-analitycs {
+        h2 {
+            margin-bottom: 25px;
+        }
+
         &__list {
             grid-template-columns: 1fr;
         }

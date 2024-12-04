@@ -1,3 +1,7 @@
 @media (max-width: 360px) {
-    
+    .index-analitycs {
+        &__grid {
+            gap: 15px;
+        }
+    }
 }

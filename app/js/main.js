@@ -110,7 +110,7 @@ let swiper8 = new Swiper(".swiper8", {
 var swiper9 = new Swiper(".swiper9", {
     slidesPerView: 'auto',
     spaceBetween: 15,
-    speed: 3000,
+    speed: 2000,
     autoplay: {
         delay: 0,
     },
