@@ -225,56 +225,60 @@ h3 {
     }
 }
 
-main>section {
-    margin-top: 120px;
-    margin-bottom: 120px;
-
-    &:first-child {
-        margin-top: 10px;
+main {
+    &>section {
+        margin-top: 120px;
         margin-bottom: 120px;
 
-        &.index-hero {
+        &:first-child {
+            margin-top: 10px;
+            margin-bottom: 120px;
+
+            &.index-hero {
+                .box {
+                    padding: 170px 80px 30px;
+                }
+            }
+
             .box {
-                padding: 170px 80px 30px;
-            }
-        }
-
-        .box {
-            position: relative;
-            min-height: 570px;
-            padding: 170px 180px 30px;
-            border-radius: 50px;
-            overflow: hidden;
-
-            &::before {
-                z-index: -1;
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                width: 100%;
-                height: 100%;
+                position: relative;
+                min-height: 570px;
+                padding: 170px 180px 30px;
                 border-radius: 50px;
-                background: image-set(url(../images/first-section.avif), url(../images/first-section.webp), url(../images/first-section.png)) center / 100% 100% no-repeat;
-                animation: scale-bg 7s linear infinite forwards;
+                overflow: hidden;
+
+                &::before {
+                    z-index: -1;
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50px;
+                    background: image-set(url(../images/first-section.avif), url(../images/first-section.webp), url(../images/first-section.png)) center / 100% 100% no-repeat;
+                    animation: scale-bg 7s linear infinite forwards;
+                }
             }
-        }
 
-        .btn-white {
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-top: 35px;
-        }
+            .btn-white {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 35px;
+            }
 
-        p {
-            max-width: 705px;
-            margin: auto;
-            margin-top: 15px;
-            color: var(--white);
-            text-align: center;
+            p {
+                max-width: 705px;
+                margin: auto;
+                margin-top: 15px;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: var(--white);
+                text-align: center;
+            }
         }
     }
 }
@@ -1026,10 +1030,15 @@ main>section {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 6px;
+        padding-bottom: 4px;
+        overflow-x: auto;
     }
 
     &__btn {
+        min-width: 235px;
+        width: 100%;
+        white-space: nowrap;
         display: flex;
         gap: 10px;
         align-items: center;
@@ -1061,6 +1070,7 @@ main>section {
             color: var(--white);
             overflow: hidden;
             background: transparent;
+            border-radius: 10px;
 
             &::before {
                 z-index: -1;
@@ -1099,6 +1109,7 @@ main>section {
         }
 
         table {
+            min-width: 1200px;
             position: relative;
             width: 100%;
             border-collapse: collapse;
@@ -3068,6 +3079,26 @@ main>section {
     .swiper-slide {
         width: 60px;
         height: 60px;
+    }
+}
+
+.table-overflow {
+    overflow: auto;
+}
+
+.swiper7 {
+    .swiper-pagination {
+        position: initial;
+        margin-top: 25px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+
+        &-active {
+            background: var(--purple);
+        }
     }
 }
 

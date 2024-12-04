@@ -89,7 +89,22 @@ let swiper6 = new Swiper(".swiper6", {
 
 let swiper7 = new Swiper(".swiper7", {
     spaceBetween: 20,
-    slidesPerView: 4,
+
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+        },
+        900: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
 });
 
 let swiper8 = new Swiper(".swiper8", {
@@ -242,3 +257,14 @@ function headerMobileUsability() {
 
 headerMobileUsability();
 // мобильное меню (конец)
+
+// Помещение всех таблиц в div (начало)
+document.addEventListener('DOMContentLoaded', () => {
+    for (let table of document.getElementsByTagName("table")) {
+        let tableOverflow = document.createElement("div");
+        tableOverflow.className = "table-overflow";
+        table.parentElement.replaceChild(tableOverflow, table);
+        tableOverflow.appendChild(table);
+    };
+});
+// Помещение всех таблиц в div (конец)

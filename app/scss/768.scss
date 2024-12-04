@@ -57,4 +57,40 @@
             margin-top: 25px;
         }
     }
+
+    .crumbs {
+        margin-bottom: 20px;
+    }
+
+    .start-instruments {
+        h2 {
+            &+p {
+                padding-left: 1px;
+                padding-right: 1px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .index-start {
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .terms-types {
+        h2 {
+            &+p {
+                margin-bottom: 25px;
+            }
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 20px;
+        }
+    }
 }
