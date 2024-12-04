@@ -1,3 +1,56 @@
 @media (max-width: 768px) {
-    
+    main {
+        &>section {
+            margin-top: 80px;
+            margin-bottom: 80px;
+
+            &:first-child {
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    .index-hero {
+        &__list {
+            display: none;
+        }
+
+        .swiper9 {
+            display: block;
+        }
+    }
+
+    .index-platform {
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        .btn-coral {
+            margin-top: 25px;
+        }
+    }
+
+    .index-reviews {
+        h2 {
+            &+p {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .index-analitycs {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            padding: 20px 10px;
+        }
+    }
+
+    .banner {
+        .btn-white {
+            margin-top: 25px;
+        }
+    }
 }

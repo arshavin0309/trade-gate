@@ -12,4 +12,10 @@
             grid-template-columns: 1fr 1fr;
         }
     }
+
+    .index-platform {
+        .container {
+            grid-template-columns: 400px 505px;
+        }
+    }
 }

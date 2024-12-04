@@ -1,3 +1,8 @@
 @media (max-width: 1200px) {
-    
+    .index-platform {
+        .container {
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+    }
 }

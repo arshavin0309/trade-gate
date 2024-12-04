@@ -120,4 +120,14 @@
             gap: 15px;
         }
     }
+
+    main {
+        &>section {
+            &:first-child {
+                .box {
+                    min-height: 550px;
+                }
+            }
+        }
+    }
 }

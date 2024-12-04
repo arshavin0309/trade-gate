@@ -54,7 +54,7 @@ body {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: clamp(32px, 7vw, 68px);
+    font-size: clamp(32px, 5vw, 68px);
     font-weight: 600;
     line-height: 117%;
     text-align: center;
@@ -64,7 +64,7 @@ h1 {
 
 h2,
 .h2 {
-    font-size: 40px;
+    font-size: clamp(24px, 5vw, 40px);
     font-weight: 600;
     line-height: 120%;
     text-align: center;
@@ -72,14 +72,14 @@ h2,
 }
 
 h3 {
-    font-size: 24px;
+    font-size: clamp(18px, 3vw, 24px);
     font-weight: 600;
     line-height: 130%;
     margin: 0;
 }
 
 .textm {
-    font-size: 18px;
+    font-size: clamp(16px, 3vw, 18px);
     font-weight: 500;
     line-height: 130%;
 }
@@ -480,6 +480,7 @@ main>section {
     }
 
     .container {
+        width: 60%;
         padding-top: 105px;
         padding-bottom: 105px;
 
@@ -615,6 +616,12 @@ main>section {
                 url(../images/index-platform-bg.png)) center / 100% 100% no-repeat;
     }
 
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+
     .container {
         display: grid;
         grid-template-columns: 1fr 505px;
@@ -698,7 +705,7 @@ main>section {
         &:nth-child(1) {
             background: var(--white) image-set(url(../images/index-start-item-1.avif),
                     url(../images/index-start-item-1.webp),
-                    url(../images/index-start-item-1.png)) right 10px bottom -6px / 330px 210px no-repeat;
+                    url(../images/index-start-item-1.png)) right 10px bottom -6px / calc(100% - 10px - 30px) no-repeat;
 
             &::before {
                 content: '1';
@@ -720,7 +727,7 @@ main>section {
         &:nth-child(2) {
             background: var(--white) image-set(url(../images/index-start-item-2.avif),
                     url(../images/index-start-item-2.webp),
-                    url(../images/index-start-item-2.png)) center bottom 10px / 310px 177px no-repeat;
+                    url(../images/index-start-item-2.png)) center bottom 10px / calc(100% - 40px - 40px) no-repeat;
 
             &::before {
                 content: '2';
@@ -742,7 +749,7 @@ main>section {
         &:nth-child(3) {
             background: var(--white) image-set(url(../images/index-start-item-3.avif),
                     url(../images/index-start-item-3.webp),
-                    url(../images/index-start-item-3.png)) right 5px bottom -5px / 350px 195px no-repeat;
+                    url(../images/index-start-item-3.png)) right 5px bottom -5px / calc(100% - 5px - 20px) no-repeat;
 
             &::before {
                 content: '3';
@@ -3050,13 +3057,17 @@ main>section {
     }
 }
 
-.swiper10 {
+.swiper9 {
+    display: none;
+    margin-top: 60px;
+
     .swiper-wrapper {
         transition-timing-function: linear !important;
     }
 
     .swiper-slide {
-        background: red;
+        width: 60px;
+        height: 60px;
     }
 }
 

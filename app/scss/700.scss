@@ -1,3 +1,25 @@
 @media (max-width: 700px) {
-    
+    .index-grid {
+        h2 {
+            text-align: center;
+        }
+
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+
+            &:first-child {
+                max-width: 100%;
+                height: auto;
+                text-align: center;
+            }
+
+            &:not(:first-child) {
+                height: 165px;
+                padding: 20px 10px;
+            }
+        }
+    }
 }

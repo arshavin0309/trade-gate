@@ -52,8 +52,15 @@ function backToTop() {
 // кнопка вверх (конец)
 
 let swiper1 = new Swiper(".swiper1", {
-    slidesPerView: 3,
     spaceBetween: 20,
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+    },
 
     pagination: {
         el: ".swiper-pagination",
@@ -98,6 +105,17 @@ let swiper8 = new Swiper(".swiper8", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+});
+
+var swiper9 = new Swiper(".swiper9", {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    speed: 3000,
+    autoplay: {
+        delay: 0,
+    },
+    loop: true,
+    allowTouchMove: false,
 });
 
 $(document).ready(function () {
@@ -156,7 +174,7 @@ function showTr() {
     tableTr.addClass('active');
     tableShow.css('display', 'none');
     tableHide.css('display', 'flex');
-}
+};
 
 function hideTr() {
     tableTr.removeClass('active');
@@ -166,7 +184,7 @@ function hideTr() {
     $("body, html").animate({
         scrollTop: $('.start-instruments').offset().top
     }, 600);
-}
+};
 
 tableShow.on('click', showTr);
 tableHide.on('click', hideTr);
@@ -175,58 +193,52 @@ tableHide.on('click', hideTr);
 
 // мобильное меню (начало)
 
-let menuItem = $('.header .menu > .menu-item')
-let subMenu = $('.header .menu > .menu-item .sub-menu')
+let menuItem = $('.header .menu > .menu-item');
+let subMenu = $('.header .menu > .menu-item .sub-menu');
 
-if ($(window).width() <= 1024) {
+function headerMobileUsability() {
 
-    $('.header__burger').on('click', function () {
-        $('.header__burger').toggleClass('active')
-        $('.header__box').toggleClass('active')
-        $('.header .menu').toggleClass('active')
+    if ($(window).width() <= 1024) {
 
-        subMenu.slideUp()
-        menuItem.removeClass('active')
-    })
+        $('.header__burger').on('click', function () {
+            $('.header__burger').toggleClass('active');
+            $('.header__box').toggleClass('active');
+            $('.header .menu').toggleClass('active');
 
-    $('.upButton').on('click', function () {
-        $('.header__burger').removeClass('active')
-        $('.header__box').removeClass('active')
-        $('.header .menu').removeClass('active')
-
-        subMenu.slideUp()
-        menuItem.removeClass('active')
-    });
-
-    for (let i = 0; i < menuItem.length; i++) {
-        menuItem.eq(i).on('click', function () {
-
-            if (menuItem.eq(i).hasClass('active')) {
-
-                menuItem.eq(i).removeClass('active')
-                subMenu.eq(i).slideUp()
-
-            } else {
-                subMenu.slideUp()
-                menuItem.removeClass('active')
-
-                subMenu.eq(i).slideDown()
-                menuItem.eq(i).addClass('active')
-            }
+            subMenu.slideUp();
+            menuItem.removeClass('active');
         })
-    }
-}
 
+        $('.upButton').on('click', function () {
+            $('.upButton').on('click', function () {
+                $('.header__burger').removeClass('active');
+                $('.header__box').removeClass('active');
+                $('.header .menu').removeClass('active');
+
+                subMenu.slideUp();
+                menuItem.removeClass('active');
+            });
+        });
+
+        for (let i = 0; i < menuItem.length; i++) {
+            menuItem.eq(i).on('click', function () {
+
+                if (menuItem.eq(i).hasClass('active')) {
+
+                    menuItem.eq(i).removeClass('active');
+                    subMenu.eq(i).slideUp();
+
+                } else {
+                    subMenu.slideUp();
+                    menuItem.removeClass('active');
+
+                    subMenu.eq(i).slideDown();
+                    menuItem.eq(i).addClass('active');
+                };
+            });
+        };
+    };
+};
+
+headerMobileUsability();
 // мобильное меню (конец)
-
-var swiper10 = new Swiper(".swiper10", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    speed: 3000,
-    autoplay: {
-        delay: 0,
-    },
-    loop: true,
-    slidesPerView: 'auto',
-    // disableOnInteraction: true,
-});

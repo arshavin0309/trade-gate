@@ -15,4 +15,32 @@
             text-align: center;
         }
     }
+
+    .index-platform {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .index-start {
+        p {
+            width: calc(100% - 220px);
+        }
+
+        &__item {
+            padding: 80px 10px 30px;
+
+            &:nth-child(1) {
+                background-position: right -80px bottom -6px;
+            }
+
+            &:nth-child(2) {
+                background-position: right -80px center;
+            }
+
+            &:nth-child(3) {
+                background-position: right -80px bottom -5px;
+            }
+        }
+    }
 }
