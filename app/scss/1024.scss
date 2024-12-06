@@ -205,4 +205,32 @@
             padding: 20px 10px;
         }
     }
+
+    .other {
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .calendar-find {
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__item {
+            min-height: 140px;
+            padding-bottom: 60px;
+        }
+    }
+
+    .currencies-instrument {
+        .container {
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+    }
 }

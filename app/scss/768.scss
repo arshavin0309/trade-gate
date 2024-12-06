@@ -122,4 +122,36 @@
             }
         }
     }
+
+    .single {
+        &__image {
+            height: 250px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            &.single__link {
+                margin-top: 25px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .currencies-list {
+        &__item {
+            min-height: 180px;
+        }
+    }
+
+    .currencies-instrument {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        .widget-box {
+            .mch-widget {
+                margin: auto;
+            }
+        }
+    }
 }

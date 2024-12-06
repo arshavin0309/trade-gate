@@ -129,4 +129,10 @@
             grid-template-columns: 1fr;
         }
     }
+
+    .calendar-find {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
 }
