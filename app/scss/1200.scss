@@ -16,4 +16,13 @@
             padding-bottom: 70px;
         }
     }
+
+    .strategy-accordion {
+        grid-template-columns: 1fr;
+
+        li {
+            min-height: auto;
+            padding: 20px 10px;
+        }
+    }
 }
