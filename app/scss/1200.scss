@@ -25,4 +25,23 @@
             padding: 20px 10px;
         }
     }
+
+    .with-aside {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        section {
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .aside {
+            display: none;
+        }
+    }
+
+    .review-important {
+        grid-template-columns: 1fr 1fr;
+    }
 }

@@ -2046,6 +2046,7 @@ main {
                     background: var(--gradient-coral-purple);
                     background-size: 200% 200%;
                     animation: gradient 3s ease-in-out infinite;
+                    opacity: 1;
                 }
 
                 &::after {
@@ -2085,6 +2086,7 @@ main {
             height: 100%;
             border-radius: 10px;
             transition: var(--transition);
+            opacity: 0;
         }
 
         &::after {

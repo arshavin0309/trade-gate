@@ -131,18 +131,78 @@
         }
     }
 
-    .with-aside {
-        .container {
-            grid-template-columns: 1fr;
-        }
-
-        section {
+    main {
+        &>section {
             margin-top: 80px;
             margin-bottom: 80px;
+
+            &:first-child {
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    .review-hero {
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .strategies-hero {
+        h2 {
+            margin-bottom: 25px;
         }
 
-        .aside {
-            display: none;
+        &__list {
+            margin-top: 25px;
+        }
+    }
+
+    .schedule-hero {
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .index-reviews {
+        h2 {
+            &+p {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .index-start {
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .platform-advantages {
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .index-analitycs {
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .index-platform {
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        .btn-coral {
+            margin-top: 25px;
+        }
+    }
+
+    .faq-accordion {
+        h3 {
+            padding: 20px 10px;
         }
     }
 }
