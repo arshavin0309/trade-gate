@@ -74,10 +74,22 @@ let swiper1 = new Swiper(".swiper1", {
 });
 
 let swiper5 = new Swiper(".swiper5", {
-    spaceBetween: 20,
-    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+    slidesPerView: 1.7,
+    spaceBetween: 10,
+
+    breakpoints: {
+        500: {
+            slidesPerView: 2.2,
+        },
+        600: {
+            slidesPerView: 3,
+        },
+        768: {
+            spaceBetween: 20,
+        },
+    }
 });
 
 let swiper6 = new Swiper(".swiper6", {

@@ -84,4 +84,49 @@
             margin: auto;
         }
     }
+
+    .condition-instruments {
+        &__item {
+            &:nth-child(1) {
+                p {
+                    text-align: left;
+                }
+            }
+
+            &:nth-child(2) {
+                p {
+                    text-align: left;
+                }
+            }
+
+            &:nth-child(3) {
+                p {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .news-box {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .pagination {
+        margin-top: 25px;
+
+        li {
+            max-width: 40px;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    .other {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
 }

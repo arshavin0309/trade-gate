@@ -1274,7 +1274,7 @@ main {
     }
 
     &__btn {
-        padding: 14px;
+        padding: 14px 2px;
         text-align: center;
         font-size: 18px;
         font-weight: 500;
@@ -1284,6 +1284,7 @@ main {
         border-radius: 5px;
         transition: var(--transition);
         overflow: hidden;
+        white-space: nowrap;
         cursor: pointer;
 
         &::before {
@@ -2230,9 +2231,9 @@ main {
         background: var(--white);
         border: 1px solid var(--coral);
         color: var(--black);
-        font-size: 18px;
+        font-size: clamp(14px, 4vw, 18px);
         font-weight: 500;
-        line-height: 24px;
+        line-height: 130%;
 
         &.active {
             color: var(--white);
@@ -2248,9 +2249,9 @@ main {
             text-decoration: none;
             color: var(--black);
             transition: var(--transition);
-            font-size: 18px;
+            font-size: clamp(14px, 4vw, 18px);
             font-weight: 500;
-            line-height: 24px;
+            line-height: 130%;
         }
     }
 }
@@ -2320,7 +2321,7 @@ main {
 
     &__list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
     }
 
@@ -3102,6 +3103,12 @@ main {
         &-active {
             background: var(--purple);
         }
+    }
+}
+
+.widget-box {
+    &.mobile {
+        display: none;
     }
 }
 

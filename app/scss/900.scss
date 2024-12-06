@@ -3,7 +3,7 @@
         &__list {
             grid-template-columns: 1fr;
         }
-        
+
         p {
             width: calc(100% - 300px);
         }
@@ -41,5 +41,15 @@
 
     .review-important {
         grid-template-columns: 1fr;
+    }
+
+    .widget-box {
+        &.desktop {
+            display: none;
+        }
+
+        &.mobile {
+            display: block;
+        }
     }
 }
