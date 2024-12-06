@@ -1,0 +1,11 @@
+@media (max-width: 1600px) {
+    .banner {
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}

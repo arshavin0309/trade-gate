@@ -27,17 +27,47 @@
     }
 
     .banner {
-        &::before {
-            display: none;
-        }
-
-        &::after {
-            display: none;
-        }
-
         .container {
             width: 100%;
             padding: 80px 15px;
+        }
+    }
+
+    .platform-platform {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            &:nth-child(1) {
+                background: image-set(url(../images/platform-bg-1.avif), url(../images/platform-bg-1.webp), url(../images/platform-bg-1.png)) right center / 300px 100% no-repeat;
+            }
+
+            &:nth-child(2) {
+                background: image-set(url(../images/platform-bg-2.avif), url(../images/platform-bg-2.webp), url(../images/platform-bg-2.png)) right bottom -2px / 300px 100% no-repeat;
+            }
+
+            &.mobile {
+                grid-row: initial;
+                grid-column: initial;
+                background: image-set(url(../images/platform-bg-3.avif), url(../images/platform-bg-3.webp), url(../images/platform-bg-3.png)) right bottom / 300px 100% no-repeat;
+            }
+
+            p {
+                max-width: calc(100% - 300px);
+            }
+        }
+
+        .btn-white {
+            box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
+        }
+
+        .btn-coral {
+            box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
+        }
+
+        &__links {
+            display: flex;
         }
     }
 }

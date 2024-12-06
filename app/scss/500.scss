@@ -55,4 +55,15 @@
             }
         }
     }
+
+    .platform-advantages {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            height: 220px;
+            padding: 20px 10px 80px;
+        }
+    }
 }

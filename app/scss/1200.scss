@@ -5,4 +5,15 @@
             gap: 30px;
         }
     }
+
+    .platform-advantages {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__item {
+            height: auto;
+            padding-bottom: 70px;
+        }
+    }
 }
