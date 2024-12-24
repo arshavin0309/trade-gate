@@ -115,4 +115,14 @@
             min-height: 200px;
         }
     }
+
+    .history {
+        &__list {
+            gap: 25px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+    }
 }

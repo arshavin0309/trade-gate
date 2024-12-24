@@ -231,6 +231,8 @@ main {
         margin-bottom: 120px;
 
         &:first-child {
+            z-index: 1;
+            position: relative;
             margin-top: 10px;
             margin-bottom: 120px;
 
@@ -2775,7 +2777,7 @@ main {
     background: image-set(url(../images/history-bg.avif),
             url(../images/history-bg.webp),
             url(../images/history-bg.png),
-        ) center / contain no-repeat;
+        ) center / 1920px 100% no-repeat;
 
     &__list {
         width: 100%;
@@ -2871,7 +2873,7 @@ main {
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
     }
 
@@ -2959,6 +2961,10 @@ main {
         row-gap: 15px;
         grid-template-columns: 80px 1fr;
         color: var(--white);
+
+        .textm {
+            font-size: 18px;
+        }
 
         a {
             color: var(--white);

@@ -233,4 +233,31 @@
             gap: 20px;
         }
     }
+
+    .contacts {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__map {
+            grid-column: initial;
+        }
+    }
+
+    .documents {
+        &__item {
+            position: relative;
+        }
+
+        .btn-white {
+            width: calc(100% - 12px);
+            background: var(--white);
+
+            div {
+                position: initial;
+                opacity: 1;
+                font-size: 18px;
+            }
+        }
+    }
 }
