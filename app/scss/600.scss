@@ -95,4 +95,24 @@
             text-align: center;
         }
     }
+
+    .cryptocurrencies-list {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            min-height: 200px;
+        }
+    }
+
+    .raw-materials-list {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            min-height: 200px;
+        }
+    }
 }

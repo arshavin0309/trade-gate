@@ -45,4 +45,36 @@
         grid-template-columns: 1fr 1fr;
         gap: 25px;
     }
+
+    .indexes-list {
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__image {
+            background: var(--coral) image-set(url(../images/indexes-list.avif), url(../images/indexes-list.webp), url(../images/indexes-list.png)) center / contain no-repeat;
+        }
+    }
+
+    .cryptocurrencies-list {
+        &__list {
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        }
+
+        &__image {
+            background: var(--coral) image-set(url(../images/cryptocurrencies-image.avif),
+                    url(../images/cryptocurrencies-image.webp),
+                    url(../images/cryptocurrencies-image.png)) left bottom / contain no-repeat;
+        }
+    }
+
+    .raw-materials-list {
+        &__list {
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        }
+
+        &__image {
+            background: var(--coral) image-set(url(../images/raw-materials-image.avif), url(../images/raw-materials-image.webp), url(../images/raw-materials-image.png)) left bottom / contain no-repeat;
+        }
+    }
 }

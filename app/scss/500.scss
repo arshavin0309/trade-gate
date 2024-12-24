@@ -39,9 +39,9 @@
             }
 
             &:nth-child(2) {
-                background: var(--white) image-set(url(../images/index-start-item-2.avif),
-                        url(../images/index-start-item-2.webp),
-                        url(../images/index-start-item-2.png)) center bottom 10px / 300px 170px no-repeat;
+                background: var(--white) image-set(url(../images/index-start-item-2-mobile.avif),
+                        url(../images/index-start-item-2-mobile.webp),
+                        url(../images/index-start-item-2-mobile.png)) center bottom 65px / 255px 100px no-repeat;
 
                 &:after {
                     display: none;
@@ -64,6 +64,24 @@
         &__item {
             height: 220px;
             padding: 20px 10px 80px;
+
+            &:nth-child(1) {
+                .platform-advantages__box {
+                    max-width: 95%;
+                }
+            }
+
+            &:nth-child(3) {
+                .platform-advantages__box {
+                    max-width: 80%;
+                }
+            }
+
+            &:nth-child(4) {
+                .platform-advantages__box {
+                    max-width: 92%;
+                }
+            }
         }
     }
 
@@ -133,6 +151,61 @@
     .calendar-find {
         &__list {
             grid-template-columns: 1fr;
+        }
+    }
+
+    .terms-advantages {
+        &__item {
+            height: 230px;
+            padding: 20px 10px;
+
+            &.slide-1 {
+                background: var(--coral) image-set(url(../images/terms-advantages-slide-1.avif), url(../images/terms-advantages-slide-1.webp), url(../images/terms-advantages-slide-1.png)) left -5px bottom -5px / 155px 119px no-repeat;
+            }
+
+            &.slide-2 {
+                background: var(--coral) image-set(url(../images/terms-advantages-slide-2.avif), url(../images/terms-advantages-slide-2.webp), url(../images/terms-advantages-slide-2.png)) left 10px bottom 10px / 109px 109px no-repeat;
+            }
+
+            &.slide-3 {
+                background: var(--coral) image-set(url(../images/terms-advantages-slide-3.avif), url(../images/terms-advantages-slide-3.webp), url(../images/terms-advantages-slide-3.png)) left 10px bottom -5px / 183px 126px no-repeat;
+            }
+
+            &.slide-4 {
+                background: var(--coral) image-set(url(../images/terms-advantages-slide-4.avif), url(../images/terms-advantages-slide-4.webp), url(../images/terms-advantages-slide-4.png)) left 10px bottom / 156px 126px no-repeat;
+            }
+
+            &.slide-5 {
+                background: var(--coral) url(../images/terms-advantages-slide-5.svg) left 0 bottom / 124px 120px no-repeat;
+            }
+
+            &.slide-6 {
+                background: var(--coral) image-set(url(../images/terms-advantages-slide-6.avif), url(../images/terms-advantages-slide-6.webp), url(../images/terms-advantages-slide-6.png)) left 10px bottom / 155px 115px no-repeat;
+            }
+
+            &.slide-7 {
+                background: var(--coral) image-set(url(../images/terms-advantages-slide-7.avif), url(../images/terms-advantages-slide-7.webp), url(../images/terms-advantages-slide-7.png)) left 10px bottom -5px / 211px 126px no-repeat;
+            }
+        }
+    }
+
+    .banner {
+        .container {
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 325px;
+            padding: 50px 15px;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .btn-white {
+            margin: 0;
         }
     }
 }

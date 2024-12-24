@@ -22,4 +22,24 @@
             }
         }
     }
+
+    .stocks-list {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            min-height: 200px;
+        }
+    }
+
+    .indexes-list {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            min-height: 200px;
+        }
+    }
 }
