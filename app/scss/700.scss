@@ -42,4 +42,20 @@
             min-height: 200px;
         }
     }
+    
+    .history-support {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        &__image {
+            order: 1;
+            width: auto;
+            height: auto;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
 }

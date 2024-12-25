@@ -77,4 +77,47 @@
             background: var(--coral) image-set(url(../images/raw-materials-image.avif), url(../images/raw-materials-image.webp), url(../images/raw-materials-image.png)) left bottom / contain no-repeat;
         }
     }
+
+    .history-support {
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        .container {
+            grid-template-columns: 300px 1fr;
+        }
+
+        &__image {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .history-in-numbers {
+        &__list {
+            display: none;
+        }
+
+        .swiper10 {
+            display: block;
+
+            .swiper-slide {
+                max-width: 300px;
+            }
+
+            .swiper-pagination {
+                position: initial;
+                margin-top: 25px;
+            }
+
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+
+                &-active {
+                    background: var(--purple);
+                }
+            }
+        }
+    }
 }

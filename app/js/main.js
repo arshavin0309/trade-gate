@@ -153,6 +153,28 @@ var swiper9 = new Swiper(".swiper9", {
     allowTouchMove: false,
 });
 
+let swiper10 = new Swiper(".swiper10", {
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    loop: true,
+
+    // breakpoints: {
+    //     600: {
+    //         slidesPerView: 2,
+    //     },
+    //     900: {
+    //         slidesPerView: 3,
+    //     },
+    //     1200: {
+    //         slidesPerView: 4,
+    //     }
+    // },
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});
+
 $(document).ready(function () {
     $('.strategy-accordion > li > .answer').hide();
 
@@ -231,6 +253,8 @@ tableHide.on('click', hideTr);
 let menuItem = $('.header .menu > .menu-item');
 let subMenu = $('.header .menu > .menu-item .sub-menu');
 
+$(window).on('resize', headerMobileUsability)
+
 function headerMobileUsability() {
 
     if ($(window).width() <= 1024) {
@@ -272,7 +296,7 @@ function headerMobileUsability() {
                 };
             });
         };
-    };
+    }
 };
 
 headerMobileUsability();

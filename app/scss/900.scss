@@ -52,4 +52,15 @@
             display: block;
         }
     }
+
+    .history-support {
+        .container {
+            grid-template-columns: 200px 1fr;
+        }
+
+        &__image {
+            width: 200px;
+            height: 200px;
+        }
+    }
 }
