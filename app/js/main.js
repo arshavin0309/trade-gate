@@ -157,18 +157,7 @@ let swiper10 = new Swiper(".swiper10", {
     spaceBetween: 20,
     slidesPerView: 'auto',
     loop: true,
-
-    // breakpoints: {
-    //     600: {
-    //         slidesPerView: 2,
-    //     },
-    //     900: {
-    //         slidesPerView: 3,
-    //     },
-    //     1200: {
-    //         slidesPerView: 4,
-    //     }
-    // },
+    centeredSlides: true,
 
     pagination: {
         el: '.swiper-pagination',
