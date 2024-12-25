@@ -42,8 +42,12 @@
                         <div class="swiper-slide condition-instruments__item">
                             <p class="textm">Котировки финансовых рынков с дополнительной информацией и графиками</p>
 
-                            <div class="widget-box">
+                            <div class="widget-box desktop">
                                 <script src="https://api.marketcheese.com/widgets/quotes/widget.js" data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":true,"devSource":"WDT","groups":[{"name":"Форекс","symbols":"42,48,57,68,87"},{"name":"Товарные фьючерсы","symbols":"127,129,187,188"},{"name":"Акции США","symbols":"11,27,30,35,196"}],"height":700}'></script>
+                            </div>
+
+                            <div class="widget-box mobile">
+                                <script src="https://api.marketcheese.com/widgets/quotes/widget.js" data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":false,"columns":"ask,bid,dayOpening,dayMax,dayMin,todayIncrement,todayIncrementAbs","groups":[{"name":"Символы","symbols":"97,98,99,100,104,127,128,129,277"}],"height":390,"type":"simplified"}'></script>
                             </div>
                         </div>
 
