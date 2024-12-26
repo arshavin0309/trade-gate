@@ -30,6 +30,11 @@
         &__item {
             padding: 80px 10px 30px;
 
+            &::before {
+                top: 20px;
+                left: 10px;
+            }
+
             &:nth-child(1) {
                 background-position: right -80px bottom -6px;
             }
@@ -60,7 +65,7 @@
 
             &.mobile {
                 gap: 190px;
-                background: image-set(url(../images/platform-bg-mobile-3.avif), url(../images/platform-bg-mobile-3.webp), url(../images/platform-bg-mobile-3.png)) right 18px bottom 20px / 201px 310px no-repeat;
+                background: image-set(url(../images/platform-bg-mobile-3.avif), url(../images/platform-bg-mobile-3.webp), url(../images/platform-bg-mobile-3.png)) right 18px bottom 10px / 201px 310px no-repeat;
 
                 .platform-platform__links {
                     grid-template-columns: 1fr;

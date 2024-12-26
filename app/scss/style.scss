@@ -1053,6 +1053,7 @@ main {
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
+        color: var(--black);
         cursor: pointer;
 
         svg {
@@ -1197,6 +1198,7 @@ main {
         background: none;
         border: none;
 
+        color: var(--black);
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
@@ -1287,6 +1289,7 @@ main {
         transition: var(--transition);
         overflow: hidden;
         white-space: nowrap;
+        color: var(--black);
         cursor: pointer;
 
         &::before {
@@ -2995,7 +2998,7 @@ main {
         padding: 30px 25px;
         border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2509803922);
+        //box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2509803922);
     }
 
     &__map {

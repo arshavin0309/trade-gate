@@ -248,16 +248,5 @@
         &__item {
             position: relative;
         }
-
-        .btn-white {
-            width: calc(100% - 12px);
-            background: var(--white);
-
-            div {
-                position: initial;
-                opacity: 1;
-                font-size: 18px;
-            }
-        }
     }
 }
