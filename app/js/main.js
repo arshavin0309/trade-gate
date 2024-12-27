@@ -82,14 +82,17 @@ let swiper5 = new Swiper(".swiper5", {
     breakpoints: {
         500: {
             slidesPerView: 2.2,
+            spaceBetween: 10,
         },
         600: {
             slidesPerView: 3,
+            spaceBetween: 10,
         },
         768: {
+            slidesPerView: 3,
             spaceBetween: 20,
         },
-    }
+    },
 });
 
 let swiper6 = new Swiper(".swiper6", {
