@@ -3011,6 +3011,17 @@ main {
     display: grid;
     gap: 20px;
 
+    &__submit {
+        position: relative;
+
+        .wpcf7-spinner {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+    }
+
     input {
         width: 100%;
         padding: 18px 15px;
@@ -3070,7 +3081,7 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 
-    label[for="checkbox"] {
+    label[for="checkbox"], .wpcf7-acceptance label {
         display: grid;
         grid-template-columns: 30px 385px;
         gap: 15px;
@@ -3125,6 +3136,20 @@ main {
     &.mobile {
         display: none;
     }
+}
+
+.wpcf7-list-item {
+    margin: 0 !important;
+}
+
+.wpcf7-not-valid-tip {
+    margin: 10px 0 !important;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 0 !important;
+    padding: 10px 20px !important;
+    border-radius: 10px !important;
 }
 
 @import '../scss/hovers';

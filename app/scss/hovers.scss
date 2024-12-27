@@ -410,7 +410,7 @@
     }
 
     form {
-        label[for="checkbox"] {
+        label[for="checkbox"], .wpcf7-acceptance label {
             a {
                 &:hover {
                     color: var(--coral);
