@@ -245,8 +245,6 @@ tableHide.on('click', hideTr);
 let menuItem = $('.header .menu > .menu-item');
 let subMenu = $('.header .menu > .menu-item .sub-menu');
 
-$(window).on('resize', headerMobileUsability)
-
 function headerMobileUsability() {
     console.log('headerMobileUsability')
 
@@ -298,7 +296,7 @@ function headerMobileUsability() {
     }
 };
 
-headerMobileUsability();
+$(window).ready(headerMobileUsability);
 // мобильное меню (конец)
 
 // Помещение всех таблиц в div (начало)
