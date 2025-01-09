@@ -248,6 +248,7 @@ let subMenu = $('.header .menu > .menu-item .sub-menu');
 $(window).on('resize', headerMobileUsability)
 
 function headerMobileUsability() {
+    console.log('headerMobileUsability')
 
     if ($(window).width() <= 1024) {
 
@@ -270,7 +271,6 @@ function headerMobileUsability() {
                 menuItem.removeClass('active');
             });
         });
-
         for (let i = 0; i < menuItem.length; i++) {
             menuItem.eq(i).on('click', function () {
 
@@ -288,6 +288,13 @@ function headerMobileUsability() {
                 };
             });
         };
+    } else {
+        $('.header__burger').removeClass('active');
+        $('.header__box').removeClass('active');
+        $('.header .menu').removeClass('active');
+
+        subMenu.slideDown();
+        menuItem.removeClass('active');
     }
 };
 
